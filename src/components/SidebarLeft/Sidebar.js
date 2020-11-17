@@ -1,9 +1,10 @@
 import React from 'react';
-// import './Sidebar.css';
-import Filters from './Filters';
-import Logo from './Logo';
-import Social from './Social';
-import Navbar from './Navbar';
+import './Sidebar.css';
+import Filters from './Filters/Filters';
+import Logo from './Logo/Logo';
+import Social from './Social/Social';
+import Navbar from './Navbar/Navbar';
+import Copyright from './Copyright/Copyright';
 
 function Sidebar() {
   return (
@@ -12,6 +13,7 @@ function Sidebar() {
         <Navbar />
         <Filters />
         <Social />
+        <Copyright />
     </div>
   );
 }

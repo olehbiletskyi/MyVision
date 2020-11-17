@@ -1,10 +1,10 @@
 import React from 'react';
-// import './Logo.css';
+import './Logo.css';
 
 function Logo() {
   return (
     <div className="Logo">
-      <h3>my creative Logo</h3>
+      <h1 className='main-logo'>БО</h1>
     </div>
   );
 }
