@@ -6,9 +6,13 @@ import logo from './logo.png';
 function Logo() {
   return (
     <div className="Logo">
-      <NavLink to="/homepage">
+      {/* <NavLink to="/homepage">
         <img src={logo} className='main-logo' />
-      </NavLink>
+      </NavLink> */}
+      <a href="/homepage">
+        <img src={logo} className='main-logo' />
+      </a>
+      
     </div>
   );
 }

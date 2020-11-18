@@ -1,15 +1,18 @@
+import './App.css';
 import React from 'react';
 import { Switch, Route } from "react-router-dom";
-import './MainPart.css';
+import Sidebar from '../components/Sidebar/Sidebar';
 import Home from './Home/Home';
 import About from './About/About';
 import Work from './Work/Work';
 import Blog from './Blog/Blog';
 import Contacts from './Contacts/Contacts';
 
-function MainPart() {
+
+function App() {
   return (
-    <div className="MainPart">
+    <div className="App">
+        <Sidebar />
         <Switch>
             <Route path="/homepage" component={Home} />
             <Route path="/about" component={About} />
@@ -20,5 +23,4 @@ function MainPart() {
     </div>
   );
 }
-
-export default MainPart;
+export default App;

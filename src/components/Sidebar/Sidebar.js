@@ -4,7 +4,7 @@ import Filters from './Filters/Filters';
 import Logo from './Logo/Logo';
 import Social from './Social/Social';
 import Navbar from './Navbar/Navbar';
-import Copyright from './Copyright/Copyright';
+import Copyright from './Copyright/Copyright.js';
 
 function Sidebar() {
   return (

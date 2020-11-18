@@ -6,7 +6,7 @@ import { createLogger } from 'redux-logger';
 import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import thunk from 'redux-thunk';
 import './index.css';
-import App from './components/App'; 
+import App from './containers/App'; 
 import rootReducer from './reducers';
 
 
