@@ -5,3 +5,14 @@
     background-color: #242b2e;
     padding-right: 25px;
 }
+.social-icon{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.social-icon:hover{
+    color: rgb(31, 149, 147);
+}
