@@ -13,10 +13,7 @@
     background-color: #1ab5b3;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
 }
-.active-Navbar-link{
-    background-color: #1ab5b3;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
-}
+
 .Navbar-link{
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     color: #ffffff;
@@ -27,4 +24,8 @@
     letter-spacing: normal;
     line-height: 32px;
     text-transform: uppercase;
+}
+.active-Navbar-link{
+    background-color: #1ab5b3;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
 }

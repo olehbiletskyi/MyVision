@@ -1,41 +1,42 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
   return (
     <nav className="Navbar">
-            <Link to="/homepage" className="Navbar-link" activeClassName="active-Navbar-link"> 
-                <div className="Navbar-item">
+            <NavLink to="/homepage"  className="Navbar-link" activeClassName="active-Navbar-link"> 
+                <p className="Navbar-item">
                     Home
-                </div>
-            </Link>
-            <Link to="/work" className="Navbar-link" activeClassName="active-Navbar-link">
-                <div className="Navbar-item">
-                    Work
-                </div>
-            </Link>
+                </p>
+            </NavLink>
             <Link to="/about" className="Navbar-link" activeClassName="active-Navbar-link">
-                <div className="Navbar-item">
+                <p className="Navbar-item">
                     About
-                </div>
+                </p>
             </Link>
+            <NavLink to="/work" className="Navbar-link" activeClassName="active-Navbar-link">
+                <p className="Navbar-item">
+                    Work
+                </p>
+            </NavLink>
+            
             <Link to="/blog" className="Navbar-link" activeClassName="active-Navbar-link">
-                <div className="Navbar-item">
+                <p className="Navbar-item">
                     Blog
-                </div>
+                </p>
             </Link>
             <Link to="/services" className="Navbar-link" activeClassName="active-Navbar-link">
-                <div className="Navbar-item">
+                <p className="Navbar-item">
                     Services
-                </div>
+                </p>
             </Link>
             <Link to="/contacts" className="Navbar-link" activeClassName="active-Navbar-link">
-                <div className="Navbar-item">
+                <p className="Navbar-item">
                     Contacts
-                </div>
+                </p>
             </Link>
     </nav>
   );
 }
-export default Navbar;
+export default Navbar; 
