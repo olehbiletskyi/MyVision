@@ -14,6 +14,7 @@ function App() {
     <div className="App">
         <Sidebar />
         <Switch>
+            <Route  exact path="/" component={Home} />
             <Route path="/homepage" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/work" component={Work} />
