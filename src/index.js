@@ -10,26 +10,28 @@ import App from './containers/App';
 import rootReducer from './reducers';
 
 
-//LOGGER
-// const middleware = [ thunk ];
-// if (process.env.NODE_ENV !== 'production') {
-//     middleware.push(createLogger());
-// }
+// LOGGER
+const middleware = [ thunk ];
+if (process.env.NODE_ENV !== 'production') {
+    middleware.push(createLogger());
+}
 
 
 //REDUX-DEV-TOOLS
-// const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
-//create STORE
-// const store = createStore(rootReducer, composeEnhancers(
-//     applyMiddleware(...middleware)
-// ));
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 
 
-const store = createStore(
-    rootReducer,
-);
+//CREATE STORE
+const store = createStore(rootReducer, composeEnhancers(
+    applyMiddleware(...middleware)
+));
+
+
+
+// const store = createStore(
+//     rootReducer,
+// );
 
 
 ReactDOM.render(

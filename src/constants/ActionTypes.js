@@ -1,0 +1,1 @@
+export const GET_SOMETHING = "GET_SOMETHING";
