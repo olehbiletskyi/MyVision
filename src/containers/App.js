@@ -2,11 +2,11 @@ import './App.css';
 import React from 'react';
 import { Switch, Route } from "react-router-dom";
 import Sidebar from '../components/Sidebar/Sidebar';
-import Home from './Home/Home';
-import About from './About/About';
-import Work from './Work/Work';
-import Blog from './Blog/Blog';
-import Contacts from './Contacts/Contacts';
+import Home from '../components/Home/Home';
+import About from '../components/About/About';
+import Work from '../components/Work/Work';
+import Blog from '../components/Blog/Blog';
+import Contacts from '../components/Contacts/Contacts';
 
 
 function App() {

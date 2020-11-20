@@ -1,6 +1,6 @@
 import {
     GET_SOMETHING,
-} from "../constants/ActionTypes";
+} from "../constants/constants";
 
 const initialState = {
     "status": "ok",
@@ -38,7 +38,7 @@ const initialState = {
     ]    
 };
 
-const blog = (state = initialState, action) => {
+const blogReducer = (state = initialState, action) => {
     switch (action.type) {
         case GET_SOMETHING:
             return {
@@ -48,4 +48,4 @@ const blog = (state = initialState, action) => {
             return state;
     }
 }
-export default blog;
+export default blogReducer;

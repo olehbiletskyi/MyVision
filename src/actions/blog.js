@@ -1,7 +1,7 @@
 import {
     GET_SOMETHING
-} from '../constants/ActionTypes';
+} from '../constants/constants';
 
-export const GET_SOMETHING = () => (
+export const getSomething = () => (
     {type: GET_SOMETHING,}
 );

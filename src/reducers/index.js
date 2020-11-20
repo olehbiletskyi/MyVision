@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import blog from './blog';
+import blogReducer from './blogReducer';
 
-// import visibilityFilter from './visibilityFilter'
+
 
 export default combineReducers({
-    blog,
-//   visibilityFilter
+    blogReducer,
+
 })
