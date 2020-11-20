@@ -1,4 +1,4 @@
-![1.0](/public/img/1.png)
+![1.0](./public/img/1.jpg)
 >
 Awesome design: [look on Google Disk](https://drive.google.com/drive/folders/1eJFUUUbTq9e5Rq1Vp4Fb9oqgLo-B20-9?usp=sharing)
 >
