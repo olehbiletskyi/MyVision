@@ -1,27 +1,30 @@
 import React from 'react';
 import './Blog.css';
+import { GoCalendar } from 'react-icons/go';
 
 function Blog(props) {
-    console.log(props);
     return (
         <div className="Blog">
             {props.articles.map((item) => (
-                <div className="standart-article">
-                    <div className="img-part">
-                        <img className="article-urlToImage" src={item.urlToImage} /> 
+                <div className="article">
+                    <div className="article__img-part">
+                        <img className="article__image" src={item.urlToImage} /> 
                     </div>
-                    <div className="text-part">
-                        <h1 className="article-title">{item.title}</h1>
+                    <div className="article__text-part">
+                        <h1 className="article__title">{item.title.slice(0,50)}...</h1>
 
-                        <div className="article-description">{item.description}</div>
+                        <div className="article__description">{item.description.slice(0, 150)}...</div>
+                      
+                        <div className="article__row-line"></div>
 
-                        <div className="article-source-name"> 
-                        <a href={item.url} target='blank'>{item.source.name}</a>
+                        <div className="article__footer-row"> 
+                            <a className="article__source-name" href={item.url} target='blank'>{item.source.name}</a>
+                            <div className="article__footer-row">
+                            <GoCalendar className="article__calendar-icon"/>
+                            <div className="article__publishedAt">{item.publishedAt.slice(0,10)}, {item.publishedAt.slice(11,19)}</div>
+                            </div>
+                            
                         </div>
-                        <div className="article-publishedAt">{item.publishedAt}</div>
-
-
-                        {/* <div className="article-author">{item.author}</div> */}
                     </div>
                             
                 </div>
