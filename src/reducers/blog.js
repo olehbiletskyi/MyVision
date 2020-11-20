@@ -31,7 +31,7 @@ const initialState = {
             "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/o3snsdpk6dedcz1guds8.png",
             "publishedAt": "2020-11-19T00:21:00Z",
             "content": "The holidays are saved, Charlie Brown! Well, kind of.\r\nApple recently snapped up exclusive streaming rights for the iconic Peanuts specials for Apple TV+including A Charlie Brown Christmas and A Char… [+1614 chars]"
-            },
+        },
 
 
 

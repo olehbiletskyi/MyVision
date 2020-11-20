@@ -29,11 +29,6 @@ const store = createStore(rootReducer, composeEnhancers(
 
 
 
-// const store = createStore(
-//     rootReducer,
-// );
-
-
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
