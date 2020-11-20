@@ -4,7 +4,7 @@ import './Work.css';
 function Work() {
   return (
     <div className="Work">
-       <h1>Work</h1> 
+       <h1 className="test">Work</h1> 
     </div>
   );
 }

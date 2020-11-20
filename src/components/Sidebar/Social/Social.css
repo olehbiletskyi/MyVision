@@ -12,7 +12,22 @@
     margin-left: 3px;
     margin-top: 2px;
     margin-bottom: 2px;
+    opacity: 0.5;
 }
-.social-icon:hover{
-    color: rgb(31, 149, 147);
-}
+.social-icon:hover{opacity: 1;}
+
+.facebook:hover{color:#1861c0;}
+.twitter:hover{color:#1099ee;}
+.instagram:hover{color: #f32969} 
+.pinterest:hover {color:#DF0019}
+.youtube:hover {color:#FF0000}
+.vimeo:hover {color:#43C9E2}
+.skype:hover {color:#00B1EB}
+.gmail:hover {color:#EB4132}
+.whatsapp:hover{color:#008645} 
+.linkedin:hover {color:#0A66C2}
+.telegram:hover {color:#2CA4D8}
+.github:hover {color:#1A1E22}
+.stackoverflow:hover {color:#F67F23} 
+.bitbucket:hover { color:#2684FF}
+.medium:hover{color:#000000}

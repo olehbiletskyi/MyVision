@@ -45,19 +45,19 @@ const initialState = {
             "publishedAt": "2020-11-20T09:24:38Z",
             "content": "A Tesla Model 3 owner crashed his car so hard, the electric vehicle’s battery broke apart and sent cells flying all over the area. The police department of Corvallis, Oregon has posted the details of… [+866 chars]"
         },
-        // {
-        //     "source": {
-        //     "id": "mashable",
-        //     "name": "Mashable"
-        //     },
-        //     "author": "Haley Henschel",
-        //     "title": "This year's best Black Friday tablet deals include $200 off the brand new iPads",
-        //     "description": "Here are the best Black Friday deals on tablets as of Nov. 19:\n<ul>\n<li>BEST IPAD DEAL: iPad (WiFi + Cellular, 32GB or 128GB) — save $200 at Best Buy with a 2-year Verizon contract\r\n</li>\n<li>BEST FOR KIDS: Amazon Fire HD 10 Kids Edition (32GB) — get $40 in K…",
-        //     "url": "https://mashable.com/shopping/black-friday-tablet-deals/",
-        //     "urlToImage": "https://mondrian.mashable.com/2020%252F11%252F19%252F9c%252F36459624042c47c2b3743f540c3fea7c.da8a6.png%252F1200x630.png?signature=ykQV_U1isVSwfD7xnLBCW-GcMSA=",
-        //     "publishedAt": "2020-11-19T10:04:00Z",
-        //     "content": "Here are the best Black Friday deals on tablets as of Nov. 19:\r\nAnd here we were, thinking that Prime Day brought us a glut of good tablet sales.\r\nThis Black Friday, we're seeing what feels like a re… [+7330 chars]"
-        // },
+        {
+            "source": {
+            "id": "mashable",
+            "name": "Mashable"
+            },
+            "author": "Haley Henschel",
+            "title": "This year's best Black Friday tablet deals include $200 off the brand new iPads",
+            "description": "Here are the best Black Friday deals on tablets as of Nov. 19: BEST IPAD DEAL: iPad (WiFi + Cellular, 32GB or 128GB) — save $200 at Best Buy with a 2-year Verizon contract BEST FOR KIDS: Amazon Fire HD 10 Kids Edition (32GB) — get $40 in K…",
+            "url": "https://mashable.com/shopping/black-friday-tablet-deals/",
+            "urlToImage": "https://mondrian.mashable.com/2020%252F11%252F19%252F9c%252F36459624042c47c2b3743f540c3fea7c.da8a6.png%252F1200x630.png?signature=ykQV_U1isVSwfD7xnLBCW-GcMSA=",
+            "publishedAt": "2020-11-19T10:04:00Z",
+            "content": "Here are the best Black Friday deals on tablets as of Nov. 19:\r\nAnd here we were, thinking that Prime Day brought us a glut of good tablet sales.\r\nThis Black Friday, we're seeing what feels like a re… [+7330 chars]"
+        },
 
 
 

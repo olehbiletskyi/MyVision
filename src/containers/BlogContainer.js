@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { getSomething } from '../actions/blog';
 import Blog from '../components/Blog/Blog';

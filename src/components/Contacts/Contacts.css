@@ -1,4 +1,8 @@
 .Contacts{
     background-color: rgb(38, 75, 133);
+    background-color: #b4b7b8;
     width: 100%;
+}
+.test{
+    font-size: 40px;
 }

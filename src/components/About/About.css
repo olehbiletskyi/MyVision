@@ -1,4 +1,8 @@
 .About{
     background-color: rgb(198, 160, 98);
+    background-color: #b4b7b8;
     width: 100%;
+}
+.test{
+    font-size: 40px;
 }
