@@ -7,6 +7,7 @@ import About from '../components/About/About';
 import Work from '../components/Work/Work';
 import Blog from '../components/Blog/Blog';
 import Contacts from '../components/Contacts/Contacts';
+import BlogContainer from './BlogContainer';
 
 
 function App() {
@@ -15,11 +16,17 @@ function App() {
         <Sidebar />
         <Switch>
             <Route  exact path="/" component={Home} />
+            {/* <Route  exact path="/" component={HomeContainer} /> */}
             <Route path="/homepage" component={Home} />
+            {/* <Route path="/homepage" component={HomeContainer} /> */}
             <Route path="/about" component={About} />
+            {/* <Route path="/about" component={AboutContainer} /> */}
             <Route path="/work" component={Work} />
-            <Route path="/blog" component={Blog} />
+            {/* <Route path="/work" component={WorkContainer} /> */}
+            {/* <Route path="/blog" component={Blog} /> */}
+            <Route path="/blog" component={BlogContainer} />
             <Route path="/contacts" component={Contacts} />
+            {/* <Route path="/contacts" component={ContactsContainer} /> */}
         </Switch>
     </div>
   );

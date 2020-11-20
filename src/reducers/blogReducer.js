@@ -32,6 +32,19 @@ const initialState = {
             "publishedAt": "2020-11-19T00:21:00Z",
             "content": "The holidays are saved, Charlie Brown! Well, kind of.\r\nApple recently snapped up exclusive streaming rights for the iconic Peanuts specials for Apple TV+including A Charlie Brown Christmas and A Char… [+1614 chars]"
         },
+        {
+            "source": {
+            "id": "cnn",
+            "name": "CNN"
+            },
+            "author": "Sara Sidner, CNN",
+            "title": "This young ER doctor had to tell Covid-19 ",
+            "description": "ER doctor David Burkard was 28, fit, healthy and knew how to take precautions against coronavirus.",
+            "url": "https://www.cnn.com/2020/11/19/health/er-doctor-david-burkard-coronavirus/index.html",
+            "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/201119182452-david-burkard-covid-super-tease.jpeg",
+            "publishedAt": "2020-11-20T01:26:00Z",
+            "content": "Grand Rapids, Michigan (CNN)When coronavirus first hit in March, Dr. David Burkard found himself having some of the toughest conversations of his life. \r\nHe had to let patients know when it was time … [+4462 chars]"
+            },
 
 
 

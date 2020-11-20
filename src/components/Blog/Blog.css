@@ -1,4 +1,71 @@
 .Blog{
-    background-color: rgb(101, 87, 37);
+    background-color: #b4b7b8;
     width: 100%;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-wrap: wrap;
 }
+.standart-article{
+    max-width: 294px;
+    max-height: 370px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 5px 5px 5px;
+}
+.img-part{
+    background-color: #d7d7d7;
+    height: 141px;
+}
+.article-urlToImage{
+    width: 294px;
+    height: 141px;
+}
+.text-part{
+    padding: 20px;
+}
+.article-title{
+    /* width: 170px; */
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    margin-bottom: 13px;
+}
+.article-description{
+    /* width: 250px; */
+    color: #9c9c9c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.article-source-name{
+    color: #9a9a9a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+}
+
+.article-publishedAt{
+    color: #9a9a9a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+}
+
+.article-author{}
+
