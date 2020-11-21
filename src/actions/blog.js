@@ -1,7 +1,28 @@
 import {
-    GET_SOMETHING
+    GET_POSTS_REQUEST,
+    GET_POSTS_SUCCESS,
+    GET_POSTS_FAIL,
+    GET_MORE_POSTS_REQUEST,
+    GET_MORE_POSTS_SUCCESS,
+    GET_MORE_POSTS_FAIL,
 } from '../constants/constants';
 
-export const getSomething = () => (
-    {type: GET_SOMETHING,}
-);
+import { getPosts } from '../api/newsapi';
+
+const getPosts = async (dispatch) => {
+
+    dispatch({ type: GET_POSTS_REQUEST });
+  
+    try {
+      const response = await getPosts();
+      const res = await response.json();
+      dispatch({ type: GET_POSTS_SUCCESS, payload: res });
+    } catch (e) {
+      dispatch({ type: GET_POSTS_FAIL, payload: e });
+    }
+
+  };
+  
+  export const getPostsFunc = (dispatch) => {
+    return () => getPosts(dispatch);
+  };

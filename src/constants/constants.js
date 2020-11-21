@@ -1,1 +1,12 @@
-export const GET_SOMETHING = "GET_SOMETHING";
+export const GET_POSTS_REQUEST = "GET_POSTS_REQUEST";
+export const GET_POSTS_SUCCESS = "GET_POSTS_SUCCESS";
+export const GET_POSTS_FAIL = "GET_POSTS_FAIL";
+
+export const GET_MORE_POSTS_REQUEST = "GET_MORE_POSTS_REQUEST";
+export const GET_MORE_POSTS_SUCCESS = "GET_MORE_POSTS_SUCCESS";
+export const GET_MORE_POSTS_FAIL = "GET_MORE_POSTS_FAIL";
+   
+      
+     
+    
+    

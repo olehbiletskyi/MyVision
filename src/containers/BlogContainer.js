@@ -1,31 +1,26 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import { getSomething } from '../actions/blog';
+import { getPostsFunc } from '../actions/blog';
 import Blog from '../components/Blog/Blog';
 
-
-const BlogContainer = ( {author, publishedAt, articles, getSomething,} ) => (
+const BlogContainer = ( {articles, getPosts,} ) => (
     <Blog 
-        author={author}
-        publishedAt={publishedAt}
-        articles={articles}
+        articles={articles} getPosts={getPosts}
     />
 );
 
 
 const mapStateToProps = (state) => ({
-    author: state.blogReducer.articles[0].author,
-    publishedAt: state.blogReducer.articles[0].publishedAt,
-    articles: state.blogReducer.articles,
+    articles: state.blogReducer.artcl.data,
 });
 
 
-const mapDispatchToProps =  {
-        getSomething,
+const mapDispatchToProps = (dispatch) => {
+    return{
+        getPosts: getPostsFunc(dispatch),
+    };
 };
 
 
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps,
-)(BlogContainer);
+export default connect(mapStateToProps,
+mapDispatchToProps,)(BlogContainer);
