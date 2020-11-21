@@ -19,7 +19,11 @@ const initialState = {
     artcl: {
         isLoading: null,
         error: null,
-        data: null,
+        data: {
+            "status": null,
+            "totalResults": null,
+            "articles": null,
+        }
     },
 };
 
@@ -52,7 +56,11 @@ const blogReducer = (state = initialState, action) => {
                 artcl: {
                     isLoading: true,
                     error: null,
-                    data: null,
+                    data: {
+                        "status": null,
+                        "totalResults": null,
+                        "articles": null,
+                    }
                 },
             };
         case GET_POSTS_SUCCESS:
