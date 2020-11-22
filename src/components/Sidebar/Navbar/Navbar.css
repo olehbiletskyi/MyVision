@@ -6,7 +6,7 @@
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     letter-spacing: normal;
     line-height: 32px;
@@ -30,7 +30,7 @@
 
 .Navbar-link-text:hover{
      color: #000000;
-     transition: color 0.2s ease-in;
+     transition: color 0.1s ease-in;
 }
 
 
