@@ -9,7 +9,7 @@ function Logo() {
       {/* <NavLink to="/homepage">
         <img src={logo} className='main-logo' />
       </NavLink> */}
-      <a href="/">
+      <a href="/homepage">
         <img src={logo} className='main-logo' />
       </a>
       

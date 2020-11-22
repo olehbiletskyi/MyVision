@@ -1,19 +1,6 @@
 .Navbar{
-
+    /* height: 100vh */
 }
-.Navbar-item{
-    background-color: rgb(47, 55, 59);
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.02) 0%, rgba(255, 255, 255, 0.02) 100%);
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    text-align: right;
-}
-.Navbar-item:hover{
-    background-color: #1ab5b3;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
-}
-
 .Navbar-link{
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     color: #ffffff;
@@ -24,8 +11,26 @@
     letter-spacing: normal;
     line-height: 32px;
     text-transform: uppercase;
-}
-.active-Navbar-link{
     background-color: #1ab5b3;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
 }
+.Navbar-link-text{
+    background-color: rgb(47, 55, 59);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.02) 100%);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    text-align: right;
+}
+
+
+.Navbar-link-active .Navbar-link-text{
+    background-color: #1ab5b3;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.02) 100%);
+}
+
+.Navbar-link-text:hover{
+     color: #000000;
+     transition: color 0.2s ease-in;
+}
+
+
