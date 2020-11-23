@@ -1,6 +1,5 @@
 import React from 'react';
 import { GoCalendar } from 'react-icons/go';
-import { javascript } from 'webpack';
 import './Blog.css';
 // import './Article/Article.js';
 
