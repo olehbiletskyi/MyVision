@@ -5,6 +5,7 @@ import {
 } from '../constants/constants';
 
 const initialState = {
+    value: bitcoin,
     artcl: {
         isLoading: null,
         error: null,

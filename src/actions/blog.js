@@ -7,14 +7,14 @@ import {
     GET_MORE_POSTS_FAIL,
 } from '../constants/constants';
 
-import { getPostsTechnologyFetch, getPostsFetch } from '../api/newsapi';
+import { getPostsFetch } from '../api/newsapi';
 
-const getPosts = async (dispatch) => {
+const getPosts = async (dispatch, param) => {
 
     dispatch({ type: GET_POSTS_REQUEST });
   
     try {
-      const response = await getPostsTechnologyFetch();
+      const response = await getPostsFetch(param);
       const res = await response.json();
       dispatch({ type: GET_POSTS_SUCCESS, payload: res });
     } catch (e) {
@@ -24,5 +24,5 @@ const getPosts = async (dispatch) => {
   };
   
   export const getPostsFunc = (dispatch) => {
-    return () => getPosts(dispatch);
+    return (param) => getPosts(dispatch, param);
   };

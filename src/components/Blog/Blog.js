@@ -1,10 +1,11 @@
 import React from 'react';
 import { GoCalendar } from 'react-icons/go';
+import { javascript } from 'webpack';
 import './Blog.css';
 // import './Article/Article.js';
 
 
-function Blog( { articles, getPosts } ) {
+function Blog( {  articles, getPosts, value, } ) {
     
 
     return (
@@ -18,7 +19,7 @@ function Blog( { articles, getPosts } ) {
                         name='Blog-form__input'
                         type='text'
                         placeholder="Search"
-                        // value={}
+                        value={value}
                         // onChange={}
                         autocomplete='off'
                     />
