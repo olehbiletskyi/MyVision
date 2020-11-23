@@ -1,7 +1,8 @@
 .Filters{
-
     font-family: "Roboto - Thin", sans-serif;
-    color: #1ab5b3;
+    /* color: #1ab5b3; */
+    color: #bcbcbc;
+    /* opacity: 0.5; */
     font-size: 19px;
     font-weight: 400;
     line-height: 32px;

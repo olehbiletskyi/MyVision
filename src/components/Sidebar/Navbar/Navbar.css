@@ -1,7 +1,7 @@
 .Navbar{
     /* height: 100vh */
 }
-.Navbar-link{
+.Navbar__link{
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -13,24 +13,33 @@
     text-transform: uppercase;
     background-color: #1ab5b3;
 }
-.Navbar-link-text{
+.Navbar__link-text{
     background-color: rgb(47, 55, 59);
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.02) 100%);
     padding-top: 25px;
     padding-bottom: 25px;
     padding-right: 25px;
+    padding-left: 30px;
     text-align: right;
+
+}
+.Navbar__icon{
+    margin-right: 5px;
+    margin-bottom: -1px;
 }
 
 
-.Navbar-link-active .Navbar-link-text{
+.Navbar__link_active .Navbar__link-text{
     background-color: #1ab5b3;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.02) 100%);
 }
 
-.Navbar-link-text:hover{
-     color: #000000;
+.Navbar__link-text:hover{
+     color: rgb(0, 0, 0);
      transition: color 0.1s ease-in;
+     background-color: #4b616142;
+     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.35) 100%, rgba(255, 255, 255, 0.02) 100%);
+     transition: background-color 0.1s ease-in;
 }
 
 

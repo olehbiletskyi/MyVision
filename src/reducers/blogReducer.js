@@ -3,18 +3,7 @@ import {
     GET_POSTS_SUCCESS,
     GET_POSTS_FAIL
 } from '../constants/constants';
-//ЗРАЗОК ВИТЯГНУТИХ ДАНИХ:
-// const initialState = {
-//     "status": "ok",
-//     "totalResults": 1449,
-//     "articles": [
-//         {
-//             "source": {
-//             "id": "cnn",
-//             "name": "CNN"
-//             },
-//             "author": "Jamie Gumbrecht, CNN",
-//             "title": "Pfizer and BioNTech to submit 
+
 const initialState = {
     artcl: {
         isLoading: null,
@@ -26,7 +15,7 @@ const initialState = {
         }
     },
 };
-
+//ЗРАЗОК ВИТЯГНУТИХ ДАНИХ:
 // const initialState = {
 //     "status": "ok",
 //     "totalResults": 1449,
