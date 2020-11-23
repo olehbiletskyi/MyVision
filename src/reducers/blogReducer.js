@@ -1,12 +1,15 @@
 import {
     GET_POSTS_REQUEST,
     GET_POSTS_SUCCESS,
-    GET_POSTS_FAIL
+    GET_POSTS_FAIL,
+    CHANGE_INPUT,
+
+
 } from '../constants/constants';
 
 const initialState = {
-    value: bitcoin,
-    artcl: {
+    value: "bitcoin",
+    posts: {
         isLoading: null,
         error: null,
         data: {
@@ -43,7 +46,7 @@ const blogReducer = (state = initialState, action) => {
         case GET_POSTS_REQUEST:
             return {
                 ...state,
-                artcl: {
+                posts: {
                     isLoading: true,
                     error: null,
                     data: {
@@ -56,7 +59,7 @@ const blogReducer = (state = initialState, action) => {
         case GET_POSTS_SUCCESS:
             return {
                 ...state,
-                artcl: {
+                posts: {
                     isLoading: false,
                     error: false,
                     data: action.payload,
@@ -65,11 +68,16 @@ const blogReducer = (state = initialState, action) => {
         case GET_POSTS_FAIL:
             return {
                 ...state,
-                artcl: {
+                posts: {
                     isLoading: false,
                     error: action.payload,
                     data: false,
                 },
+            };
+        case CHANGE_INPUT:
+            return{
+                ...state,
+                value: action.payload, 
             };
         default:
             return state;

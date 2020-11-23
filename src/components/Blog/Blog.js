@@ -20,7 +20,7 @@ function Blog( {  articles, getPosts, value, } ) {
                         placeholder="Search"
                         value={value}
                         // onChange={}
-                        autocomplete='off'
+                        autoComplete='off'
                     />
                 </div>
             </form>
@@ -31,7 +31,7 @@ function Blog( {  articles, getPosts, value, } ) {
                         {articles.map((item) => (
                             <div className="article">
                                 <div className="article__img-part">
-                                    <img className="article__image" src={item.urlToImage}/> 
+                                    <img className="article__image" src={item.urlToImage} /> 
                                 </div>
                                 <div className="article__text-part">
                                     <a href={item.url} className="article__click" target='blank'>

@@ -13,7 +13,7 @@ const BlogContainer = ( { articles, getPosts, value, } ) => (
 
 
 const mapStateToProps = (state) => ({
-    articles: state.blogReducer.artcl.data.articles,
+    articles: state.blogReducer.posts.data.articles,
     value: state.blogReducer.value,
 });
 
