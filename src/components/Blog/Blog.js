@@ -10,7 +10,21 @@ function Blog( { articles, getPosts } ) {
     return (
         <div className="Blog-wrapper">
 
-            <button onClick={getPosts} className="Blog__getPosts-btn">Posts</button>
+            <form className="Blog-form" /*onSubmit={}*/ noValidate>
+                <h1 className="Blog-form__title">Write search phrases:</h1>
+                <div className="Blog-form__input-wrapper">
+                    <input
+                        className='Blog-form__input'
+                        name='Blog-form__input'
+                        type='text'
+                        placeholder="Search"
+                        // value={}
+                        // onChange={}
+                        autocomplete='off'
+                    />
+                </div>
+            </form>
+            <button onClick={getPosts} className="Blog__getPosts-btn" type='submit'>SEARCH</button>
             {
                 ( articles ) ? 
                     (<div className="Blog">

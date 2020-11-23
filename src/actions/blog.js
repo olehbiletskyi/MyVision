@@ -7,7 +7,7 @@ import {
     GET_MORE_POSTS_FAIL,
 } from '../constants/constants';
 
-import { getPostsTechnologyFetch } from '../api/newsapi';
+import { getPostsTechnologyFetch, getPostsFetch } from '../api/newsapi';
 
 const getPosts = async (dispatch) => {
 
