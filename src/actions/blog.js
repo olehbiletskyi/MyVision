@@ -5,6 +5,8 @@ import {
     GET_MORE_POSTS_REQUEST,
     GET_MORE_POSTS_SUCCESS,
     GET_MORE_POSTS_FAIL,
+
+    CHANGE_INPUT_BLOG,
 } from '../constants/constants';
 
 import { getPostsFetch } from '../api/newsapi';
@@ -20,9 +22,13 @@ const getPosts = async (dispatch, param) => {
     } catch (e) {
       dispatch({ type: GET_POSTS_FAIL, payload: e });
     }
-
-  };
+};
   
-  export const getPostsFunc = (dispatch) => {
+export const getPostsFunc = (dispatch) => {
     return (param) => getPosts(dispatch, param);
-  };
+};
+
+
+export const changeInputAction = (inputValue) => (
+    {type: CHANGE_INPUT_BLOG, payload: inputValue,}
+);

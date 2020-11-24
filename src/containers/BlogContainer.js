@@ -1,13 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getPostsFunc } from '../actions/blog';
+import { getPostsFunc, changeInputAction } from '../actions/blog';
 import Blog from '../components/Blog/Blog';
 
-const BlogContainer = ( { articles, getPosts, value, } ) => (
+const BlogContainer = ( { articles, getPosts, value, changeInput, isLoading } ) => (
     <Blog 
         articles={articles} 
         getPosts={getPosts}
         value={value}
+        changeInput={changeInput}
+        isLoading={isLoading}
     />
 );
 
@@ -15,12 +17,14 @@ const BlogContainer = ( { articles, getPosts, value, } ) => (
 const mapStateToProps = (state) => ({
     articles: state.blogReducer.posts.data.articles,
     value: state.blogReducer.value,
+    isLoading: state.blogReducer.posts.isLoading,
 });
 
 
 const mapDispatchToProps = (dispatch, param) => {
     return{
         getPosts: getPostsFunc(dispatch, param),
+        changeInput: (inputValue) => dispatch( changeInputAction( inputValue ) ) 
     };
 };
 

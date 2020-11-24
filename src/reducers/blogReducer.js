@@ -2,13 +2,14 @@ import {
     GET_POSTS_REQUEST,
     GET_POSTS_SUCCESS,
     GET_POSTS_FAIL,
-    CHANGE_INPUT,
+
+    CHANGE_INPUT_BLOG,
 
 
 } from '../constants/constants';
 
 const initialState = {
-    value: "bitcoin",
+    value: "",
     posts: {
         isLoading: null,
         error: null,
@@ -74,7 +75,7 @@ const blogReducer = (state = initialState, action) => {
                     data: false,
                 },
             };
-        case CHANGE_INPUT:
+        case CHANGE_INPUT_BLOG:
             return{
                 ...state,
                 value: action.payload, 
