@@ -1,20 +1,18 @@
 import React from 'react';
 import { GoCalendar } from 'react-icons/go';
-import './Blog.css';
 import {GoSearch} from "react-icons/go"
 import Loader from 'react-loader-spinner'
+import './Blog.css';
 // import './Article/Article.js';
 
 
 function Blog( {  articles, getPosts, value, changeInput, isLoading } ) {
 
-
-
     return (
         <div className="Blog-wrapper">
 
-            <form className="Blog-form" /*onSubmit={}*/ noValidate>
-                <h1 className="Blog-form__title">Search for a topic</h1>
+            <form className="Blog-form" onSubmit={(e)=> (e.preventDefault()) } noValidate>
+                <h1 className="Blog-form__title">Search news for a topic</h1>
                 <div className="Blog-form__input-wrapper">
                     <GoSearch className='Blog-form__icon' />
                     <input

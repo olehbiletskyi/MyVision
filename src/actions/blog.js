@@ -12,9 +12,7 @@ import {
 import { getPostsFetch } from '../api/newsapi';
 
 const getPosts = async (dispatch, param) => {
-
     dispatch({ type: GET_POSTS_REQUEST });
-  
     try {
       const response = await getPostsFetch(param);
       const res = await response.json();
