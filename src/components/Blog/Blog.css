@@ -189,3 +189,13 @@
 .article-loader{
     text-align: center;
 }
+
+
+.Blog-update-plan{
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    color: rgb(203, 76, 76);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
