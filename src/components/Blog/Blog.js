@@ -68,7 +68,8 @@ function Blog( {  articles, getPosts, value, changeInput, isLoading, totalResult
                                     <div className="curcle curcle3"></div>
                                 </div>)
             }
-            <div className="Blog-update-plan">For view more articles please upgrade to a paid plan...</div>
+            {( articles ) ? <div className="Blog-update-plan">For view more articles please upgrade to a paid plan...</div> : null}
+            
                                 
         </div>
         

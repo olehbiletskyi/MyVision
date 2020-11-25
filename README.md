@@ -1,7 +1,9 @@
-![v4](public/img/version/004.png)
+![v6](public/img/version/006c.png)
+![v6](public/img/version/006b.png)
+<!-- ![v4](public/img/version/004.png)
 ![v2](public/img/version/002.png)
 ![v1](public/img/version/001.png)
-![v0](public/img/version/000.png)
+![v0](public/img/version/000.png) -->
 >
 Awesome design: [look on Google Disk](https://drive.google.com/drive/folders/1eJFUUUbTq9e5Rq1Vp4Fb9oqgLo-B20-9?usp=sharing)
 >

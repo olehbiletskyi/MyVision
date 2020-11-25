@@ -43,6 +43,9 @@ class Contacts extends React.Component {
 
       };
     }
+    
+    
+
 
     render() {
       const centerPosition = [this.state.center.lat, this.state.center.lng];
@@ -54,8 +57,12 @@ class Contacts extends React.Component {
                 url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
             />
             <Marker position={[this.state.ItCluster.lat, this.state.ItCluster.lng]}>
-                <Popup>
-                    <span>It-Cluster Academy</span>
+                <Popup className="popup">
+                    <div ><b>Адреса:</b> вулиця Січових стрільців, 17, Івано-Франківськ, Івано-Франківська область, 76000
+                    Години роботи: 
+                    Відчинено ⋅ Зачиняється: 18:00
+                    Телефон: 063 674 1219
+                    Зустрічі: itca.if.ua</div>
                 </Popup>
             </Marker>
             <Marker position={[this.state.SoftServe.lat, this.state.SoftServe.lng]}>
