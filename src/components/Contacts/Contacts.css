@@ -6,3 +6,8 @@
 .test{
     font-size: 40px;
 }
+.leaflet-container {
+    height: 725px;
+    width: 100%;
+}
+    
