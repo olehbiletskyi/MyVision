@@ -10,7 +10,50 @@
     height: 725px;
     width: 100%;
 }
-.map-marker-popup{
-    background-color: rgb(38, 75, 133);
+
+.map-marker{}
+.map-marker-popup{ } 
+.map-marker-popup-body{}
+
+.map-marker-popup__name{
+    color: #0e0c0c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
 }
-    
+.map-marker-popup__description{
+    color:  #0e0c0c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.map-marker-popup__address{
+    color: #0078A8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+}
+.map-marker-popup__workingHours{}
+.map-marker-popup__telephone{
+    color: #0078A8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+}
+.map-marker-popup__telephone:hover{
+    text-decoration: underline;
+}
+.map-marker-popup__website{
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+.map-marker-popup__website:hover{
+    outline: #0078A8 solid 3px;
+}
+.map-marker-popup__address__icon{ font-size: 18px; margin-bottom: -3px; margin-right: 5px;}
+.map-marker-popup__telephone__icon{ font-size: 20px; margin-bottom: -2px; margin-right: 5px;}
+.map-marker-popup__description__icon{ font-size: 20px; margin-bottom: -4px; margin-right: 1px; margin-left: -5px;}
