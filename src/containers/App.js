@@ -5,9 +5,8 @@ import Sidebar from '../components/Sidebar/Sidebar';
 import Home from '../components/Home/Home';
 import About from '../components/About/About';
 import Work from '../components/Work/Work';
-import Blog from '../components/Blog/Blog';
-import Contacts from '../components/Contacts/Contacts';
 import BlogContainer from './BlogContainer';
+import ContactsContainer from './ContactsContainer';
 
 
 function App() {
@@ -23,10 +22,9 @@ function App() {
             {/* <Route path="/about" component={AboutContainer} /> */}
             <Route path="/work" component={Work} />
             {/* <Route path="/work" component={WorkContainer} /> */}
-            {/* <Route path="/blog" component={Blog} /> */}
+            
             <Route path="/blog" component={BlogContainer} />
-            <Route path="/contacts" component={Contacts} />
-            {/* <Route path="/contacts" component={ContactsContainer} /> */}
+            <Route path="/contacts" component={ContactsContainer} />
         </Switch>
     </div>
   );
