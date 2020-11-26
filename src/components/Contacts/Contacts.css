@@ -52,7 +52,7 @@
     font-weight: 900;
 }
 .map-marker-popup__website:hover{
-    outline: #0078A8 solid 3px;
+    outline: #0078A8 solid 2px;
 }
 .map-marker-popup__address__icon{ font-size: 18px; margin-bottom: -3px; margin-right: 5px;}
 .map-marker-popup__telephone__icon{ font-size: 20px; margin-bottom: -2px; margin-right: 5px;}

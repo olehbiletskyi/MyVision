@@ -1,8 +1,76 @@
-.About{
-    background-color: rgb(198, 160, 98);
-    background-color: #b4b7b8;
+.About-wrapper{
+    /* background-color: #b4b7b8; */
+    background-color: #ababab;
     width: 100%;
 }
 .test{
     font-size: 40px;
 }
+
+.About{
+    display: flex;
+}
+.About-col1{}
+.About__portrait{
+    height: 200px;
+    border-radius: 50%;
+}
+.About__writeMe{}
+.About-col2{}
+.About__title{
+    color: #ffffff;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    text-align: left;
+}
+.About__name{
+    color: #333333;
+/* font-family: "Roboto", sans-serif; */
+font-family: "Open Sans", sans-serif;
+font-size: 18px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 30px;
+text-align: left;
+text-transform: uppercase;
+}
+.About__description{
+color: #000000;
+/* font-family: "Roboto", sans-serif; */
+font-family: "Open Sans", sans-serif;
+font-size: 18px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 30px;
+text-align: left;
+
+}
+.About__signature{}
+
+
+.About__downloadCV{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: #1ab5b3;
+    padding: 25px 120px;
+}
+
+/* для тайтлу абоут, фільтерс, копірайт
+font-family: "Roboto - Thin";
+font-weight: 400;
+font-style: normal; */
+

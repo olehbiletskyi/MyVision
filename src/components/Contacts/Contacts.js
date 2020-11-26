@@ -22,7 +22,7 @@ function Contacts ({ BiggestCompanies, center }) {
                         <div className="map-marker-popup-body">
                             <p className="map-marker-popup__name">
                                 {item.name}
-                                </p>
+                            </p>
                             <p className="map-marker-popup__description">
                                 <GrInfo className="map-marker-popup__description__icon" />
                                 {item.description}
@@ -30,7 +30,7 @@ function Contacts ({ BiggestCompanies, center }) {
                             <p className="map-marker-popup__address">
                                 <FaRegAddressCard className="map-marker-popup__address__icon"/> 
                                 {item.address}
-                                </p>
+                            </p>
                             <p className="map-marker-popup__telephone">
                                 <BiPhoneCall className="map-marker-popup__telephone__icon"/>  
                                 <a href={`tel:${item.telephone}`} target='blank'>{item.telephone}</a> 
