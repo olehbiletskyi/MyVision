@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Contacts from '../components/Contacts/Contacts';
 
 
-const ContactsContainer = ( { BiggestCompanies, center,  } ) => (
+const ContactsContainer = ( {BiggestCompanies, center,} ) => (
     <Contacts 
         BiggestCompanies={BiggestCompanies}
         center={center}
@@ -13,19 +13,10 @@ const ContactsContainer = ( { BiggestCompanies, center,  } ) => (
 
 
 
-
 const mapStateToProps = (state) => ({
     BiggestCompanies: state.mapReducer.BiggestCompanies,
     center: state.mapReducer.center,
 });
-
-
-// const mapDispatchToProps = (dispatch, param) => {
-//     return{
-//         getPosts: getPostsFunc(dispatch, param),
-//         changeInput: (inputValue) => dispatch( changeInputAction( inputValue ) ) 
-//     };
-// };
 
 
 export default connect(mapStateToProps)(ContactsContainer);

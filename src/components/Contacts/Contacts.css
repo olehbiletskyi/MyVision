@@ -10,5 +10,7 @@
     height: 725px;
     width: 100%;
 }
-
+.map-marker-popup{
+    background-color: rgb(38, 75, 133);
+}
     
