@@ -9,7 +9,7 @@ function Social() {
         <>
 
         <div className="Filters">
-            <h2><p>Connect and chat:</p></h2>
+            <h2 className='Filters__title'><p>Connect and chat:</p></h2>
         </div>
         <div className="Social">
             <a href='https://www.facebook.com/' className='social-icon facebook' target='blank'><FaFacebookSquare/></a>

@@ -31,3 +31,13 @@
 .stackoverflow:hover {color:#F67F23} 
 .bitbucket:hover { color:#2684FF}
 .medium:hover{color:#000000}
+
+
+.Filters__title{
+    font-family: "Roboto - Thin", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+}
+.Filters__title:hover{
+    color: rgb(31, 149, 147);
+}

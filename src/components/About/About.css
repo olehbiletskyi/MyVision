@@ -2,57 +2,95 @@
     /* background-color: #b4b7b8; */
     background-color: #ababab;
     width: 100%;
+    padding: 10px;
+    padding-top: 50px;
+    padding-left: 20px;
+    position: relative;
 }
-.test{
-    font-size: 40px;
-}
-
 .About{
     display: flex;
+    margin: 10px;
 }
-.About-col1{}
+.About-col1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
 .About__portrait{
+    border: rgb(248, 248, 248) solid 4px;
     height: 200px;
     border-radius: 50%;
+
+
+}
+.About__portrait:hover{
+    content: url('portrait601.JPG');
 }
 .About__writeMe{}
-.About-col2{}
+.About-col2{
+    display: flex;
+    flex-direction: column;
+}
 .About__title{
     color: #ffffff;
-    /* font-family: "Roboto", sans-serif; */
     font-family: "Open Sans", sans-serif;
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 300;
     font-style: normal;
     letter-spacing: normal;
-    line-height: 26px;
+    line-height: 34px;
     text-align: left;
+    margin-bottom: 15px;
 }
 .About__name{
-    color: #333333;
-/* font-family: "Roboto", sans-serif; */
-font-family: "Open Sans", sans-serif;
-font-size: 18px;
-font-weight: 300;
-font-style: normal;
-letter-spacing: normal;
-line-height: 30px;
-text-align: left;
-text-transform: uppercase;
+    color: #656565;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.About__name:hover{
+    color:#135c5b;
+}
+.About__description-wrapper{
+    position: relative;
+    margin-bottom: 20px;
 }
 .About__description{
-color: #000000;
-/* font-family: "Roboto", sans-serif; */
-font-family: "Open Sans", sans-serif;
-font-size: 18px;
-font-weight: 300;
-font-style: normal;
-letter-spacing: normal;
-line-height: 30px;
-text-align: left;
-
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left;
 }
-.About__signature{}
+.About__description p{
+    margin-bottom: 15px;
+}
+.About__stamp{
+    position: absolute;
+    bottom: -30px;
+    right: 15px;
+    width: 100px;
+    /* -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);*/
+    transform: rotate(15deg); 
+    opacity: 0.2;
+}
+.About__stamp:hover{
+    opacity: 0.8;
+    /* transform: rotate(5deg);*/
+    transition: opacity 0.5s ease-in;
+}
 
 
 .About__downloadCV{
@@ -63,14 +101,118 @@ text-align: left;
     font-style: normal;
     letter-spacing: normal;
     line-height: 30px;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     background-color: #1ab5b3;
     padding: 25px 120px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-/* для тайтлу абоут, фільтерс, копірайт
-font-family: "Roboto - Thin";
-font-weight: 400;
-font-style: normal; */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.share-btn-wrapper{
+    min-width: 400px; 
+    text-align: center;
+    bottom: -20px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.share span{
+    font-family: "Open Sans", sans-serif;
+    font-size: 50px;
+    color: #1b7d7b;
+    position: absolute;
+    left: 188px;
+    top: 20px;
+    /* font-weight: 2em; */
+    text-transform: uppercase;
+    font-weight: 300;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+.nav{}
+/*----------2---------*/
+.share a{
+    line-height: 65px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    background-color:  #a1a1a1;
+    overflow: hidden;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    margin: 0 -20px;
+}
+.share a:hover{
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.share a:nth-child(1) {
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    border-radius: 10%;
+    margin-left: 0;
+}
+/*-----------3-----------*/
+.share a:nth-child(1):hover{
+    background-color: #2CA4D8;
+}
+.share a:nth-child(2):hover{
+    background-color: #ea4335;
+}
+.share a:nth-child(3):hover{
+    background-color:#1167bc;
+}
+.share a:nth-child(4) {
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    border-radius: 10%;
+    margin-right: 0;
+}
+.share a:nth-child(4):hover{
+    background-color: #ffffff;
+}
+/*-----------4------------*/
+.share:hover span, .share.hover span {
+    opacity: 0;
+}
+.share:hover a, share.hover a, .share-btn__icon {
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #111111;
+    font-size: 28px;
+    opacity: 1;
+}
+.share:hover a:hover, share.hover a:hover {
+    color: #fff;
+}
 
+.share-btn__icon{
+    opacity: 0;
+} 
+.share:hover .share-btn__icon{
+    opacity: 1;
+}
+.share-btn__icon{
+    border-radius: 0;
+    text-align: center;
+    margin-top: 24px;
+}
+
+/*-----------5--------------*/
+.share:hover a:hover, .share.hover a:hover {
+    color: #fff;
+}
+a:hover{
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes text-pop-up-top {
+    0%{
+        transform: translateY(0);
+        transform-origin: 50% 50%;
+    }
+    100%{
+        transform: translateY(-50%);
+        transform-origin: 50% 50%;
+    }
+}
