@@ -16,7 +16,7 @@ function About() {
              <div className="About-col1">
                 <img src={portrait2} className="About__portrait" />
                 <div className="About__writeMe">
-                    Connect and follow me
+
                 </div> 
             </div>
             <div className="About-col2">
@@ -45,7 +45,7 @@ function About() {
 
         <div className="share-btn-wrapper">
             <div className="share">
-                <span> <GiClick/></span>
+                <span></span>
                 <nav className="nav">
                     <a href='#'><i className='share-btn__1'><FaTelegramPlane className='share-btn__icon'/></i></a>
                     <a href='#'><i className='share-btn__2'><SiGmail className='share-btn__icon'/></i></a>
