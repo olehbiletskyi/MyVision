@@ -24,7 +24,7 @@ function Navbar() {
             </NavLink>
             <NavLink to="/work" className="Navbar__link" activeClassName="Navbar__link_active">
                 <p className="Navbar__link-text">
-                    <IoIosGitNetwork className="Navbar__icon"/> Work
+                    <IoIosGitNetwork className="Navbar__icon"/> Works
                 </p>
             </NavLink>
             

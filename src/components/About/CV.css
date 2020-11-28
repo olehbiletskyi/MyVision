@@ -1,0 +1,22 @@
+.About__downloadCV{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #1ab5b3;
+    padding: 25px 120px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.About__downloadCV:hover{
+    background-color: rgb(24, 24, 24);
+    transition: background-color 0.2s ease-in;
+}
+.About__downloadCV-icon{
+
+}
