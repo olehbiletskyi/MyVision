@@ -14,3 +14,12 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
+body{
+    max-width: 1440px;
+    margin: auto;
+    background-color: rgba(160, 221, 188, 0.445);
+    background-image: url("../src/images/bc02.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
