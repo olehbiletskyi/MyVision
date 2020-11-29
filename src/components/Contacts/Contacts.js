@@ -4,12 +4,13 @@ import './Contacts.css';
 import {FaRegAddressCard} from 'react-icons/fa';
 import {BiPhoneCall} from 'react-icons/bi';
 import {GrInfo} from 'react-icons/gr';
+import Form from './Form.js';
 
 function Contacts ({ BiggestCompanies, center, BiggestCompaniesShow, showBiggestCompaniesFunc }) {
 console.log(showBiggestCompaniesFunc);
 
     return (
-        <div className="MapContainer-wrapper">
+    <div className="MapContainer-wrapper">
         <MapContainer center={[center.lat,center.lng]} zoom={center.zoom} scrollWheelZoom={true}>
 
             <TileLayer
@@ -55,7 +56,7 @@ console.log(showBiggestCompaniesFunc);
         </button>
 
 
-
+        <Form/>
 
     </div>
     )

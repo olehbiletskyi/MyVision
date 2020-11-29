@@ -75,7 +75,8 @@
     padding: 10px 16px;
     top: 25px;
     right: 25px;
-    border-radius: 5px;
+    border-radius: 2px;
+    border: #ffffff solid 2px;
     z-index: 2;
 
 }
@@ -88,7 +89,8 @@
     padding: 10px 16px;
     top: 25px;
     right: 25px;
-    border-radius: 5px;
+    border-radius: 2px;
     background-color: #fff;
+    border: #52a7a7 solid 2px;
     z-index: 2;
 }
