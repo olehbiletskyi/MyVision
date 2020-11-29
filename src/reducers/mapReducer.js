@@ -1,7 +1,4 @@
-// import {
-
-
-// } from '../constants/constants';
+import { BIGGEST_COMPANIES_SHOW_SWITCH_BUTTON } from '../constants/constants';
 
 const initialState = {
     center: {
@@ -189,18 +186,25 @@ const initialState = {
             address:"Ivano-Frankivsk, Mel'nychuka St, 16/b",
             telephone:"+16505573444",
             website:"letzgro.net",
-        },
-        
-    
-        
+        } 
     ],
+    BiggestCompaniesShow: false,
+
 
 
 
 };
 
 
-const mapReducer = (state = initialState,) => {
+const mapReducer = (state = initialState, action) => {
+    switch (action.type) {
+        case BIGGEST_COMPANIES_SHOW_SWITCH_BUTTON:
+            return {
+                ...state,
+                BiggestCompaniesShow: !state.BiggestCompaniesShow,
+            };
+        default:
             return state;
-}
+    };
+};
 export default mapReducer;

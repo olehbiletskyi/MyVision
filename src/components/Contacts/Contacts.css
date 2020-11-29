@@ -7,6 +7,7 @@
     font-size: 40px;
 }
 .leaflet-container {
+    z-index: 1;
     height: 725px;
     width: 100%;
 }
@@ -57,3 +58,37 @@
 .map-marker-popup__address__icon{ font-size: 18px; margin-bottom: -3px; margin-right: 5px;}
 .map-marker-popup__telephone__icon{ font-size: 20px; margin-bottom: -2px; margin-right: 5px;}
 .map-marker-popup__description__icon{ font-size: 20px; margin-bottom: -4px; margin-right: 1px; margin-left: -5px;}
+
+.MapContainer-wrapper{
+    position: relative;
+    height: 725px;
+    width: 100%;
+}
+.showITCompaniesBtnFalse{
+    color: #ffffff;
+    background-color: #22947b;
+    background-color: #52a7a7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    padding: 10px 16px;
+    top: 25px;
+    right: 25px;
+    border-radius: 5px;
+    z-index: 2;
+
+}
+.showITCompaniesBtnTrue{
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    padding: 10px 16px;
+    top: 25px;
+    right: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    z-index: 2;
+}
