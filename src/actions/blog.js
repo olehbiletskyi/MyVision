@@ -14,8 +14,7 @@ import { getPostsFetch } from '../api/newsapi';
 const getPosts = async (dispatch, param) => {
     dispatch({ type: GET_POSTS_REQUEST });
     try {
-      const response = await getPostsFetch(param);
-      const res = await response.json();
+      const res = await getPostsFetch(param);
       dispatch({ type: GET_POSTS_SUCCESS, payload: res });
     } catch (e) {
       dispatch({ type: GET_POSTS_FAIL, payload: e });

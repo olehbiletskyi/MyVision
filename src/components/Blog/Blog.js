@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { GoCalendar } from 'react-icons/go';
 import {GoSearch} from "react-icons/go"
 import Loader from 'react-loader-spinner'
@@ -6,7 +6,13 @@ import './Blog.css';
 // import './Article/Article.js';
 
 
-function Blog( {  articles, getPosts, value, changeInput, isLoading, totalResults } ) {
+function Blog( {  articles, getPosts, isLoading, totalResults } ) {
+
+    const [value, setValue] = useState('');
+
+    useEffect(() => { 
+        getPosts(value);
+    }, [value]);
 
     return (
         <div className="Blog-wrapper">
@@ -21,7 +27,7 @@ function Blog( {  articles, getPosts, value, changeInput, isLoading, totalResult
                         type='text'
                         placeholder="Search"
                         value={value}
-                        onChange={ (e) => changeInput(e.target.value) }
+                        onChange={ (e) => setValue(e.target.value) }
                         autoComplete='off'
                     />
                     <button onClick={ (e)=>{return (e.preventDefault(), getPosts(value)) }} className="Blog__getPosts-btn" type='submit' disabled={(value === "")?true:false}>Search news</button>
@@ -34,7 +40,7 @@ function Blog( {  articles, getPosts, value, changeInput, isLoading, totalResult
                 ( articles ) ? 
                     (<div className="Blog">
                         {articles.map((item) => (
-                            <div className="article">
+                            <div className="article" key={item.title}>
                                 <div className="article__img-part">
                                     <img className="article__image" src={item.urlToImage}  alt="" /> 
                                 </div>
@@ -58,7 +64,7 @@ function Blog( {  articles, getPosts, value, changeInput, isLoading, totalResult
                         
                     </div>) : ( isLoading ? 
 
-                                <Loader type="ThreeDots" color="#767676" height={140} width={140}  className="article-loader"/>
+                                <Loader type="ThreeDots" color="#76DD76" height={140} width={140}  className="article-loader"/>
                                 
                                 : 
 

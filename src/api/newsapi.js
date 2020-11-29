@@ -7,5 +7,23 @@ import { NEWS_API_KEY } from '../config';
 //     return fetch (`${BASE}/${type}?${searchParams.toString()}`)
 // }
 
-export const getPostsFetch = (param) => fetch(`https://newsapi.org/v2/everything?q=${param}&language
-=en&sortBy=publishedAt&page=1&apiKey=${NEWS_API_KEY}`);
+let cache = new Map();
+
+const BASE = 'https://newsapi.org/v2/everything';
+
+export const getPostsFetch = async (param = '') => {
+    if (cache.has(param)) {
+        return cache.get(param);
+    }
+
+    let query = `?language=en&sortBy=publishedAt&page=1&apiKey=${NEWS_API_KEY}`;
+    if (param) {
+        query += `&q=${param}`;
+    } else {
+        query += `&domains=techcrunch.com`;
+    }
+    const response = await fetch(`${BASE}${query}`);
+    const body = await response.json();
+    cache.set(param, body);
+    return body;
+};
