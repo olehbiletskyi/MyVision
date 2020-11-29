@@ -23,31 +23,56 @@
     flex-direction: row;
 }
 .Form-col1{}
-.Form-name-section{
-    width: 347px;
-    border: 1px solid #eaeaea;  
+.Form-section{
+    width: 347px; 
 }
-.Form-name-field{
+.Form-field{
+    color: #848484;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    border: 1px solid #eaeaea;
 
-    
 }
-.Form-email-section{
-
-    
-}
-.Form-email-field{
-
-    
-}
-.Form-link-section{}
-.Form-link-field{}
 .form{
     
 }
-.Form-col2{}
-.Form-message-section{}
-.Form-message-field{}
-.Form-submit-btn{}
+.Form-col2{
+
+}
+.Form-message-section{
+    width: 364px;
+}
+.Form-message-field{
+    color: #848484;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left;
+}
+.Form-input-icons{
+    min-width: 30px;
+    height: 30px;
+    padding: 5px;
+    color: #1ab5b3;
+    border: 1px solid #1ab5b3;;
+    border-radius: 50%;
+
+
+}
+.Form-submit-btn{
+
+}
 
 
 

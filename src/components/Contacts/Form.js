@@ -13,10 +13,10 @@ function From () {
                     <form className="form"  noValidate>
 
                         <div className="Form-col1">
-                            <div className="Form-name-section">
-                                <CgUserAdd/>
+                            <div className="Form-section">
+                                <CgUserAdd className="Form-input-icons"/>
                                 <input
-                                    className='Form-name-field'
+                                    className='Form-field'
                                     name='Form-name-input'
                                     type='text'
                                     placeholder="Name"
@@ -28,10 +28,10 @@ function From () {
                                         <div className="errorEmailMessage">{this.state.errorEmail}</div>
                                 )} */}
                             </div>
-                            <div className="Form-email-section">
-                                <FiMail/>
+                            <div className="Form-section">
+                                <FiMail className="Form-input-icons"/>
                                 <input
-                                    className='Form-email-field'
+                                    className='Form-field'
                                     name='Form-email-input'
                                     type='email'
                                     placeholder="e-mail"
@@ -43,10 +43,10 @@ function From () {
                                         <div className="errorEmailMessage">{this.state.errorEmail}</div>
                                 )} */}
                             </div>
-                            <div className="Form-link-section">
-                                <FiLink/>
+                            <div className="Form-section">
+                                <FiLink className="Form-input-icons"/>
                                 <input
-                                    className='Form-link-field'
+                                    className='Form-field'
                                     name='Form-link-input'
                                     type='email'
                                     placeholder="link"
