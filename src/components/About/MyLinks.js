@@ -8,12 +8,11 @@ function MyLinks () {
     return (
         <div className="share-btn-wrapper">
             <div className="share">
-                <span></span>
                 <nav className="nav">
-                    <a href='https://t.me/olbiletsky' target="blank"><i className='share-btn__1'><FaTelegramPlane className='share-btn__icon'/></i></a>
-                    <a href='mailto:ol.biletsky@gmail.com' target="blank"><i className='share-btn__2'><SiGmail className='share-btn__icon'/></i></a>
-                    <a href='https://www.linkedin.com/in/olegbiletsky/' target="blank"><i className='share-btn__3'><FaLinkedinIn className='share-btn__icon'/></i></a>
-                    <a href='https://github.com/OlegBiletsky' target="blank"><i className='share-btn__4'><VscGithub className='share-btn__icon'/></i></a>
+                    <a href='https://t.me/olbiletsky' target="blank"><FaTelegramPlane className='share-btn__icon'/></a>
+                    <a href='mailto:ol.biletsky@gmail.com' target="blank"><SiGmail className='share-btn__icon'/></a>
+                    <a href='https://www.linkedin.com/in/olegbiletsky/' target="blank"><FaLinkedinIn className='share-btn__icon'/></a>
+                    <a href='https://github.com/OlegBiletsky' target="blank"><VscGithub className='share-btn__icon'/></a>
                 </nav>
             </div>
         </div>
