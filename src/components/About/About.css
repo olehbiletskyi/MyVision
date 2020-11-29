@@ -1,11 +1,13 @@
 .About-wrapper{
     /* background-color: #b4b7b8; */
-    background-color: #ababab;
+    /* background-color: #ababab; */
+    background-color: #ffffff;
     width: 100%;
     padding: 10px;
     padding-top: 50px;
     padding-left: 20px;
     position: relative;
+    margin: 30px;
 }
 .About{
     display: flex;
@@ -17,7 +19,7 @@
     margin-right: 30px;
 }
 .About__portrait{
-    border: rgb(248, 248, 248) solid 4px;
+    border: #ababab solid 4px;
     height: 200px;
     border-radius: 50%;
 
@@ -32,10 +34,10 @@
     flex-direction: column;
 }
 .About__title{
-    color: #ffffff;
+    color: #135c5b;
     font-family: "Open Sans", sans-serif;
     font-size: 34px;
-    font-weight: 300;
+    font-weight: 600;
     font-style: normal;
     letter-spacing: normal;
     line-height: 34px;
@@ -47,7 +49,7 @@
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     font-weight: 300;
-    font-style: normal;
+    font-style: italic;
     letter-spacing: normal;
     line-height: 30px;
     text-align: left;

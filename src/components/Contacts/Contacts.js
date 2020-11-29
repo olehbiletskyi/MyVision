@@ -7,7 +7,6 @@ import {GrInfo} from 'react-icons/gr';
 import Form from './Form.js';
 
 function Contacts ({ BiggestCompanies, center, BiggestCompaniesShow, showBiggestCompaniesFunc }) {
-console.log(showBiggestCompaniesFunc);
 
     return (
     <div className="MapContainer-wrapper">
