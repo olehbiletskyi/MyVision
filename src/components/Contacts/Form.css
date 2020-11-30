@@ -1,22 +1,28 @@
 .Form-container{   
-    max-width: 782px;
-    background-color: rgb(255, 255, 255);
-    padding: 30px;
+    max-width: 700px;
+    background-color: rgb(243, 243, 243);
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 20px;
     border-radius: 2px;
+    border: 1px solid  #459f9f;
     position: absolute;
     top: 25px;
     left: 70px;
     z-index: 3;
 }
 .Form-title{
-    color: #000000;
+    color:#000000;
     font-family: "Roboto", sans-serif;
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
     line-height: 26px;
     text-align: left;
+    margin-bottom: 3px;
+    font-family: 'Noto Sans', sans-serif;
 }
 .form{
     display: flex;
@@ -24,12 +30,14 @@
 }
 .Form-col1{}
 .Form-section{
-    width: 347px; 
+    max-width: 350px; 
+    display: flex;
+    margin: 10px 10px 10px 0;
 }
 .Form-field{
     color: #848484;
     font-family: "Roboto", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     font-style: normal;
     letter-spacing: normal;
@@ -38,42 +46,77 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 18px;
-    border: 1px solid #eaeaea;
+    border: 1px solid #bcbcbc;
+
+    
+    /* font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(73, 73, 73); */
 
 }
-.form{
-    
+.From-input-icons{
+    padding: 15px;
+    background-color: #459f9f;
+}
+.Form-input-icons-item{
+    min-width: 30px;
+    height: 30px;
+    padding: 5px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
 }
 .Form-col2{
 
 }
 .Form-message-section{
-    width: 364px;
+    max-width: 450px; 
+    height: 134px;
+    display: flex;
+    margin: 10px 0px 10px 0;
 }
 .Form-message-field{
+    width: 232px;
     color: #848484;
     font-family: "Roboto", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     font-style: normal;
     letter-spacing: normal;
     line-height: 30px;
     text-align: left;
-}
-.Form-input-icons{
-    min-width: 30px;
-    height: 30px;
-    padding: 5px;
-    color: #1ab5b3;
-    border: 1px solid #1ab5b3;;
-    border-radius: 50%;
-
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    border: 1px solid #bcbcbc;
 
 }
+
 .Form-submit-btn{
+    background-color: #459f9f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px 65px;
+    text-align: center;
 
 }
-
+.Form-submit-btn-inner{
+    display: flex;
+    align-items: center;
+}
+.Form-submit-btn-text{
+}
+.Form-submit-btn-icon{
+    color: #ffffff;
+    font-size: 22px;
+    margin-left: 10px;
+}
 
 
 

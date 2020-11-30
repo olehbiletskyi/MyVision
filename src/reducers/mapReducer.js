@@ -2,9 +2,9 @@ import { BIGGEST_COMPANIES_SHOW_SWITCH_BUTTON } from '../constants/constants';
 
 const initialState = {
     center: {
-        lat: 48.920827,
-        lng: 24.705657,
-        zoom: 15,
+        lat: 48.92599888028613,
+        lng: 24.703786467898833,
+        zoom: 14,
     },
     BiggestCompanies: [
         {

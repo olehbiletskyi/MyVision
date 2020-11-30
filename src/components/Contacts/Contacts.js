@@ -41,11 +41,8 @@ function Contacts ({ BiggestCompanies, center, BiggestCompaniesShow, showBiggest
                                 </div>
                             </Popup>
                         </Marker>
-                    ))  
-
+                    ))
             }
-                 
-            
         </MapContainer>
 
 

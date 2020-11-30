@@ -19,7 +19,7 @@ function Blog( {  articles, getPosts, value, changeInput, isLoading, totalResult
                         className='Blog-form__input'
                         name='Blog-form__input'
                         type='text'
-                        placeholder="Search"
+                        placeholder="Type some keyword"
                         value={value}
                         onChange={ (e) => changeInput(e.target.value) }
                         autoComplete='off'
