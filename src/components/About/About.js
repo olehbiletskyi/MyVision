@@ -13,12 +13,12 @@ function About() {
   return (
     <div className="About-wrapper">
         <div className="About">
+
              <div className="About-col1">
                 <img src={portrait3} className="About__portrait" />
-                <div className="About__writeMe">
-
-                </div> 
+                <MyLinks/>
             </div>
+
             <div className="About-col2">
                 <div className="About__title">Frontend Software Engineer. React / JavaScript Developer</div> 
                 <div className="About__name">Oleg Biletsky</div>
@@ -30,14 +30,13 @@ function About() {
                     </div>
                     <img className="About__stamp" src={stamp} rotate="90"/>
                 </div>
-               
                 <CV/>
-                
             </div>
+
         </div>
 
 
-        <MyLinks/>
+        
         
  
     </div>

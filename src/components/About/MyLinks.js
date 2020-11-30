@@ -7,14 +7,18 @@ import './MyLinks.css';
 function MyLinks () {
     return (
         <div className="share-btn-wrapper">
-            <div className="share">
-                <nav className="nav">
-                    <a href='https://t.me/olbiletsky' target="blank"><FaTelegramPlane className='share-btn__icon'/></a>
-                    <a href='mailto:ol.biletsky@gmail.com' target="blank"><SiGmail className='share-btn__icon'/></a>
-                    <a href='https://www.linkedin.com/in/olegbiletsky/' target="blank"><FaLinkedinIn className='share-btn__icon'/></a>
-                    <a href='https://github.com/OlegBiletsky' target="blank"><VscGithub className='share-btn__icon'/></a>
-                </nav>
-            </div>
+                <a href='https://t.me/olbiletsky' target="blank" className="share-btn__link">
+                    <FaTelegramPlane className='share-btn__icon'/>
+                </a>
+                <a href='mailto:ol.biletsky@gmail.com' target="blank" className="share-btn__link">
+                    <SiGmail className='share-btn__icon'/>
+                </a>
+                <a href='https://www.linkedin.com/in/olegbiletsky/' target="blank" className="share-btn__link">
+                    <FaLinkedinIn className='share-btn__icon'/>
+                </a>
+                <a href='https://github.com/OlegBiletsky' target="blank" className="share-btn__link">
+                    <VscGithub className='share-btn__icon'/>
+                </a>
         </div>
     )
 }
