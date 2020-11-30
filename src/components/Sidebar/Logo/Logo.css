@@ -1,6 +1,7 @@
+.Logo-container{
+    text-align: center;
+    background-color: #fff;
+}
 .main-logo{
     height: 140px;
-}
-.Logo{
-    text-align: center;
 }

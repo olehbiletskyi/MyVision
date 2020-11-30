@@ -1,5 +1,6 @@
 .Copyright{
-    color: #6b7072;
+    color: rgb(107, 112, 114);
+    background-color: rgb(36, 43, 46);
     font-family: "Roboto - Thin", sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -7,8 +8,9 @@
     letter-spacing: normal;
     line-height: 25px;
     text-align: right;
-    background-color: #242b2e;
     padding-right: 25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 
 }
 .Copyright:hover{

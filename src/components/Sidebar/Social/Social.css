@@ -1,8 +1,24 @@
+.Social__wrapper{
+    background-color: rgb(36, 43, 46);
+}
+.Social__title{
+    color: rgb(107, 112, 114);
+    font-family: "Roboto - Thin", sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 34px;
+    text-align: right;
+    padding-right: 25px;
+    padding-bottom: 5px;
+}
+.Social__title:hover{ color: rgb(31, 149, 147); }
+
 .Social{
     text-align: right;
     font-style: normal;
     letter-spacing: normal;
-    background-color: #242b2e;
     padding-right: 25px;
 }
 .social-icon{
@@ -10,21 +26,19 @@
     font-size: 25px;
     margin-right: 3px;
     margin-left: 3px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 .social-icon:hover{opacity: 1;}
 
 .facebook:hover{color:#1861c0;}
 .twitter:hover{color:#30acf8;}
-.instagram:hover{color: #b124e0} 
+.instagram:hover{color: #b31ce5} 
 .pinterest:hover {color:#f33f54}
 .youtube:hover {color:#FF0000}
 .vimeo:hover {color:#43C9E2}
-.skype:hover {color:#00AAE8}
+.skype:hover {color:#0da3d9}
 .gmail:hover {color:#ca3a2d}
-.whatsapp:hover{color: #00BD07}
+.whatsapp:hover{color: #0da112}
 .linkedin:hover {color:#0A66C2}
 .telegram:hover {color:#2CA4D8}
 .github:hover {color:#000000}
@@ -32,12 +46,3 @@
 .bitbucket:hover { color:#2684FF}
 .medium:hover{color:#000000}
 
-
-.Filters__title{
-    font-family: "Roboto - Thin", sans-serif;
-    font-weight: 300;
-    font-style: normal; 
-}
-.Filters__title:hover{
-    color: rgb(31, 149, 147);
-}

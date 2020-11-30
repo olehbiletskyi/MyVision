@@ -1,6 +1,4 @@
 .About-wrapper{
-    /* background-color: #b4b7b8; */
-    /* background-color: #ababab; */
     background-color: #ffffff;
     width: 100%;
     padding: 10px;
@@ -90,7 +88,6 @@
 }
 .About__stamp:hover{
     opacity: 0.8;
-    /* transform: rotate(5deg);*/
     transition: opacity 0.5s ease-in;
 }
 

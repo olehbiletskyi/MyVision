@@ -16,9 +16,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 body{
     max-width: 2560px;
+    height: 100vh;
     margin: auto;
-    background-color: rgba(160, 221, 188, 0.445);
-    background-image: url("../src/images/bc02.jpg");
+    background-color: rgba(160, 221, 189, 0.653);
+    /* background-image: url("../src/images/bc02.jpg"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -1,5 +1,5 @@
 .Navbar{
-    /* height: 100vh */
+    background-color: #fff;
 }
 .Navbar__link{
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
@@ -21,13 +21,11 @@
     padding-right: 25px;
     padding-left: 30px;
     text-align: right;
-
 }
 .Navbar__icon{
     margin-right: 5px;
     margin-bottom: -1px;
 }
-
 
 .Navbar__link_active .Navbar__link-text{
     background-color: #1ab5b3;

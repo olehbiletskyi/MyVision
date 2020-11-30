@@ -5,7 +5,7 @@ import './Logo.css';
 
 function Logo() {
   return (
-    <div className="Logo">
+    <div className="Logo-container">
       {/* <NavLink to="/homepage">
         <img src={logo} className='main-logo' />
       </NavLink> */}
