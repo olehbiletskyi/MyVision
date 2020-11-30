@@ -1,5 +1,5 @@
 .About__downloadCV{
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -8,7 +8,7 @@
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-    background-color: #1ab5b3;
+    background-color: rgb(26, 181, 179);
     padding: 25px 120px;
     margin-top: 20px;
     margin-bottom: 30px;
