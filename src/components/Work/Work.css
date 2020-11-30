@@ -1,8 +1,42 @@
-.Work{
-    background-color: rgb(98, 164, 95);
-    background-color: #b4b7b8;
-    width: 100%;
+.Work-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.test{
-    font-size: 40px;
+.e1{
+    background-color: rgb(175, 255, 242);
+}
+.e2{
+    background-color: rgb(229, 225, 143);
+}
+.e3{
+    background-color: rgb(227, 171, 159);
+}
+.e4{
+    background-color: rgb(124, 174, 224);
+}
+.e5{
+    background-color: rgb(212, 151, 229);
+}
+.e6{
+    background-color: rgb(141, 233, 144);
+}
+.e7{
+    background-color: rgb(218, 236, 233);
+}
+.e8{
+    background-color: rgb(79, 79, 79);
+}
+.Work-example{
+    width: 405px;
+    height: 311px;
+    position: relative;
+}
+.Work-example-img-wrapper{}
+.Work-example-img{}
+.Work-example__text-part{}
+.Work-example__click{}
+.Work-example__title{
+    font-family:"Roboto", sans-serif;
+    font-size: 18px;
 }
