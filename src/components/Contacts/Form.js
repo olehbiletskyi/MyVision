@@ -11,7 +11,7 @@ function From () {
 
                     <h1 className="Form-title">Comments, feedback, suggestions, or just say hi:</h1>
 
-                    <form className="form"  noValidate>
+                    <form className="form"  Validate>
 
                         <div className="Form-col1">
                             <div className="Form-section">
