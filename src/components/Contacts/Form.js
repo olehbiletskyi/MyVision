@@ -67,7 +67,6 @@ class From extends React.Component  {
         }
     }
     handleChangeMessageInput(e) {
-        this.setState({message: e.target.value})
         if (e.target.value === null || e.target.value.length < 2) {
             this.setState((state)=>{
                 return {errorMessage: 'Мінімум "hi" :)'}
@@ -81,6 +80,8 @@ class From extends React.Component  {
     
     handleSubmitForm(e) {
         e.preventDefault();
+        this.setState({SUCCESS: true})
+        this.setState({message: e.target.value})
         const  {name, email, link, message} = this.state;
         if (this.state.errorName === true && this.state.errorEmail === true && this.state.errorMessage === true ) {
             console.log(name, email, link, message)
@@ -175,6 +176,14 @@ render() {
 
                     </form>
 
+
+
+{   this.state.SUCCESS ? 
+    (<div className="success">
+        ОК
+    </div>) : 
+    null
+}
             </div>
     );
 };
