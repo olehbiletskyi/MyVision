@@ -6,7 +6,6 @@ import {RiMailSendLine} from 'react-icons/ri';
 
 function From () {
     return(
-        // <div className="main-container">
         <div className="Form-container">
 
                     <h1 className="Form-title">Comments, feedback, suggestions, or just say hi:</h1>
