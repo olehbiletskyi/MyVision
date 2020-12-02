@@ -11,6 +11,9 @@
     top: 25px;
     left: 70px;
     z-index: 3;
+
+    min-width: 560px;
+    min-height: 331px;
 }
 .Form-title{
     color:#000000;
@@ -27,13 +30,43 @@
 .form{
     display: flex;
     flex-direction: row;
+    
 }
 .Form-col1{}
 .Form-section{
     max-width: 350px; 
     display: flex;
-    margin: 10px 10px 10px 0;
+    margin: 10px 10px 25px 0;
+    position: relative;
 }
+.errorNameMessage{
+    position: absolute;
+    bottom: -13px;
+    left: 163px;
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+}
+
+.errorEmailMessage{
+    position: absolute;
+    bottom: -13px;
+    left: 110px;
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+}
+.errorLinkMessage{
+    position: absolute;
+    bottom: 2px;
+    left: 165px;
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+}
+
+
+
 .Form-field{
     color: #848484;
     font-family: "Roboto", sans-serif;
@@ -47,12 +80,6 @@
     padding-bottom: 10px;
     padding-left: 18px;
     border: 1px solid #bcbcbc;
-
-    
-    /* font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
-    color: rgb(73, 73, 73); */
-
 }
 .From-input-icons{
     padding: 15px;
@@ -67,13 +94,22 @@
     border-radius: 50%;
 }
 .Form-col2{
-
+    margin-left: 10px;
 }
 .Form-message-section{
     max-width: 450px; 
-    height: 134px;
+    height: 148px;
     display: flex;
-    margin: 10px 0px 10px 0;
+    margin: 10px 0px 25px 0;
+    position: relative;
+}
+.errorMessageMessage{
+    position: absolute;
+    bottom: -14px;
+    left: 162px;
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
 }
 .Form-message-field{
     width: 232px;
@@ -104,7 +140,9 @@
     text-transform: uppercase;
     padding: 20px 65px;
     text-align: center;
-
+}
+.Form-submit-btn:disabled{
+    background-color: #848484;
 }
 .Form-submit-btn-inner{
     display: flex;
@@ -119,10 +157,61 @@
 }
 
 
+.success{
 
+}
+.success-icon{
+    color: #2e905f;
+    color: #459f9f;
+    color: #848484;
+    font-size: 120px;
 
+    margin-left: 210px;
+    margin-top: 95px;
+}
+.Form-container-2{
+    max-width: 700px;
+    background-color: rgb(215, 215, 215);
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    left: 70px;
+    z-index: 3;
 
-    
+    min-width: 560px;
+    min-height: 331px;
+}
 
-
-
+.lds-dual-ring {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 110px;
+    left: 250px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #848484 transparent #848484 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
