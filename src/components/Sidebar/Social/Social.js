@@ -8,7 +8,7 @@ function Social() {
     return (
         <div className='Social__wrapper'>
 
-            <h2 className='Social__title'>Connect and chat:</h2>
+            <h2 className='Social__title'>Useful links:</h2>
         
             <div className="Social">
                 <a href='https://www.facebook.com/' className='social-icon facebook' target='blank'><FaFacebookSquare/></a>
