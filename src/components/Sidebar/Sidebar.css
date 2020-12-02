@@ -1,6 +1,7 @@
 .Sidebar{
     max-width: 200px;
     height: 100vh;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     background-color: rgb(47, 55, 59);
@@ -9,4 +10,5 @@
     position: -webkit-sticky;
   position: sticky;
   top: 0;
+
 }

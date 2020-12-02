@@ -22,11 +22,11 @@ function Navbar() {
                     <BsInfoSquare className="Navbar__icon"/> About
                 </p>
             </NavLink>
-            <NavLink to="/work" className="Navbar__link" activeClassName="Navbar__link_active">
+            {/* <NavLink to="/work" className="Navbar__link" activeClassName="Navbar__link_active">
                 <p className="Navbar__link-text">
                     <IoIosGitNetwork className="Navbar__icon"/> Works
                 </p>
-            </NavLink>
+            </NavLink> */}
             
             <NavLink to="/blog" className="Navbar__link" activeClassName="Navbar__link_active">
                 <p className="Navbar__link-text">
