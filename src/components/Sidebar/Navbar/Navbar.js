@@ -12,11 +12,11 @@ import { BsPencil } from 'react-icons/bs';
 function Navbar() {
   return (
     <div className="Navbar">
-            <NavLink to="/homepage"  className="Navbar__link" activeClassName="Navbar__link_active"> 
+            {/* <NavLink to="/homepage"  className="Navbar__link" activeClassName="Navbar__link_active"> 
                 <p className="Navbar__link-text">
                     <AiOutlineHome className="Navbar__icon"/> Home
                 </p>
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/about" className="Navbar__link" activeClassName="Navbar__link_active">
                 <p className="Navbar__link-text">
                     <BsInfoSquare className="Navbar__icon"/> About
