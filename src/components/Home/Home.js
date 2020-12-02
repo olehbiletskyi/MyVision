@@ -1,10 +1,12 @@
 import React from 'react';
 import './Home.css';
+import waka1 from '../../images/waka1.png';
+
 
 function Home() {
   return (
     <div className="Home">
-       <h1 className="test">Home</h1> 
+       <img className="home-img" src={waka1} />
     </div>
   );
 }
