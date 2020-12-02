@@ -17,7 +17,7 @@ function Navbar() {
                     <AiOutlineHome className="Navbar__icon"/> Home
                 </p>
             </NavLink> */}
-            <NavLink to="/about" className="Navbar__link" activeClassName="Navbar__link_active">
+            <NavLink to="/MyVision/about" className="Navbar__link" activeClassName="Navbar__link_active">
                 <p className="Navbar__link-text">
                     <BsInfoSquare className="Navbar__icon"/> About
                 </p>
@@ -28,12 +28,12 @@ function Navbar() {
                 </p>
             </NavLink> */}
             
-            <NavLink to="/blog" className="Navbar__link" activeClassName="Navbar__link_active">
+            <NavLink to="/MyVision/blog" className="Navbar__link" activeClassName="Navbar__link_active">
                 <p className="Navbar__link-text">
                     <GiEarthAfricaEurope className="Navbar__icon"/>  Blog
                 </p>
             </NavLink>
-            <NavLink to="/contacts" className="Navbar__link" activeClassName="Navbar__link_active">
+            <NavLink to="/MyVision/contacts" className="Navbar__link" activeClassName="Navbar__link_active">
                 <p className="Navbar__link-text">
                     <BsPencil className="Navbar__icon"/> Contacts
                 </p>
