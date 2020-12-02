@@ -28,6 +28,7 @@ class From extends React.Component  {
 
             LOADER: false,
             SUCCESS : false,
+
         };
         this.handleChangeNameInput = this.handleChangeNameInput.bind(this)
         this.handleChangeEmailInput = this.handleChangeEmailInput.bind(this)
