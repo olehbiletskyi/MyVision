@@ -11,6 +11,9 @@
     top: 25px;
     left: 70px;
     z-index: 3;
+
+    min-width: 560px;
+    min-height: 331px;
 }
 .Form-title{
     color:#000000;
@@ -27,6 +30,7 @@
 .form{
     display: flex;
     flex-direction: row;
+    
 }
 .Form-col1{}
 .Form-section{
@@ -153,7 +157,61 @@
 }
 
 
-    
+.success{
 
+}
+.success-icon{
+    color: #2e905f;
+    color: #459f9f;
+    color: #848484;
+    font-size: 120px;
 
+    margin-left: 210px;
+    margin-top: 95px;
+}
+.Form-container-2{
+    max-width: 700px;
+    background-color: rgb(243, 243, 243);
+    padding-left: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    left: 70px;
+    z-index: 3;
 
+    min-width: 560px;
+    min-height: 331px;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 110px;
+    left: 250px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #848484 transparent #848484 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

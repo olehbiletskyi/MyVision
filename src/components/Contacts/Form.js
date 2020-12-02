@@ -3,6 +3,7 @@ import './Form.css';
 import {CgUserAdd} from 'react-icons/cg'; 
 import {FiMail, FiLink,} from 'react-icons/fi'; 
 import {RiMailSendLine} from 'react-icons/ri'; 
+import { FiCheckCircle } from 'react-icons/fi'
 
 const emailRegex = RegExp(
     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -25,7 +26,7 @@ class From extends React.Component  {
 
 
 
-
+            LOADER: false,
             SUCCESS : false,
         };
         this.handleChangeNameInput = this.handleChangeNameInput.bind(this)
@@ -80,7 +81,8 @@ class From extends React.Component  {
     
     handleSubmitForm(e) {
         e.preventDefault();
-        this.setState({SUCCESS: true})
+        setTimeout(() => this.setState({LOADER: true}), 500);
+        setTimeout(() => this.setState({LOADER: false, SUCCESS: true}), 2000);
         this.setState({message: e.target.value})
         const  {name, email, link, message} = this.state;
         if (this.state.errorName === true && this.state.errorEmail === true && this.state.errorMessage === true ) {
@@ -89,8 +91,14 @@ class From extends React.Component  {
     }
 render() {
     return(
-        <div className="Form-container">
+        <div className={!this.state.SUCCESS ? "Form-container" : "Form-container-2"}>
 
+                    
+
+                    {!this.state.SUCCESS && !this.state.LOADER ? 
+                    <>
+                    
+                    
                     <h1 className="Form-title">Comments, feedback, suggestions, or just say hi:</h1>
 
                     <form className="form"  noValidate>
@@ -175,15 +183,32 @@ render() {
 
 
                     </form>
+                    </>
 
 
 
-{   this.state.SUCCESS ? 
-    (<div className="success">
-        ОК
-    </div>) : 
-    null
-}
+                    :
+                    
+                    (this.state.LOADER) 
+                    ? 
+                    <div class="lds-dual-ring"></div>
+                    :
+                    (this.state.SUCCESS) 
+                    ? 
+                    (<div className="success">
+                        <FiCheckCircle className="success-icon"/>
+                    </div>)
+                    :
+                    null
+
+
+                    }
+
+
+                    
+
+
+                       
             </div>
     );
 };
