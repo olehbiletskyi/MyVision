@@ -12,49 +12,6 @@ function App() {
   return (
     <div className="App">
         <Sidebar />
-
-
-        <nav role="navigation">
-            <div id="menuToggle">
-
-                <input type="checkbox" className="menu-cross"/>
-                <span></span>
-                <span></span>
-                <span></span>
-
-                
-                <ul id="menu">
-                
-
-
-                    <NavLink to="/MyVision/about" className="menuToggle-NavLink" activeClassName="">
-                        <BsInfoSquare className="menu-icon"/> <p>About</p>
-                    </NavLink>
-
-
-
-
-                    <NavLink to="/MyVision/blog" className="menuToggle-NavLink" activeClassName="">
-                        <GiEarthAfricaEurope className="menu-icon"/>  <p>Blog</p>
-                    </NavLink>
-
-
-
-
-                    <NavLink to="/MyVision/contacts" className="menuToggle-NavLink" activeClassName="">
-                        <BsPencil className="menu-icon"/> <p>Contacts</p>
-                    </NavLink>
-
-
-
-
-                </ul>
-
-            </div>
-        </nav>
-
-
-
         <Switch>
             <Route  exact path="/" component={About} />
             <Route  exact path="/MyVision" component={About} />
