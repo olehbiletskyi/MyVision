@@ -11,7 +11,7 @@
      line-height: 65px;
      text-align: center;
      background-color:  #cfcbcb;
-     background-color:  rgba(26, 181, 178, 0.562);
+     background-color:  #1ab5b28f;
      color: #111111;
      opacity: 1;
      transition: all 0.3s ease-in-out;
@@ -35,3 +35,12 @@
  .share-btn__link:hover{
      box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.3);
  }
+
+ @media screen and (max-width: 941px) {
+    .share-btn-wrapper{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        margin-bottom: 30px;
+     }
+}

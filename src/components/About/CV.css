@@ -20,3 +20,16 @@
 .About__downloadCV-icon{
 
 }
+
+@media screen and (max-width: 941px) {
+    .About__downloadCV{
+        padding: 15px 100px;
+        margin-bottom: 10px;
+    }
+    .About__downloadCV:hover{
+
+    }
+    ..About__downloadCV-icon{
+
+    }
+}
