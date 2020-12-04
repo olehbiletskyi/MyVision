@@ -19,6 +19,7 @@ body{
     height: 100vh;
     margin: auto;
     background-color: rgba(160, 221, 189, 0.653);
+    background-color: #b4b7b8;
     /* background-image: url("../src/images/bc02.jpg"); */
     background-repeat: no-repeat;
     background-position: center;
