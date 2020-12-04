@@ -68,8 +68,8 @@
     font-weight: 500;
     position: absolute;
     padding: 10px 16px;
-    top: 25px;
-    right: 25px;
+    top: 390px;
+    left: 90px;
     border-radius: 2px;
     border: #ffffff solid 2px;
     z-index: 2;
@@ -82,10 +82,42 @@
     font-weight: 500;
     position: absolute;
     padding: 10px 16px;
-    top: 25px;
-    right: 25px;
+    top: 390px;
+    left: 90px;
     border-radius: 2px;
     background-color: #fff;
     border: #3e99c6 solid 2px;
     z-index: 2;
+}
+
+@media screen and (max-width: 700px) {
+    .showITCompaniesBtnFalse{
+        color: #ffffff;
+        background-color: #3e99c6;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        position: absolute;
+        padding: 10px 16px;
+        top: 390px;
+        left: 90px;
+        border-radius: 2px;
+        border: #ffffff solid 2px;
+        z-index: 2;
+    
+    }
+    .showITCompaniesBtnTrue{
+        color: #000000;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        position: absolute;
+        padding: 10px 16px;
+        top: 390px;
+        left: 90px;
+        border-radius: 2px;
+        background-color: #fff;
+        border: #3e99c6 solid 2px;
+        z-index: 2;
+    }
 }
