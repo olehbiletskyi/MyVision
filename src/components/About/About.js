@@ -9,9 +9,29 @@ import CV from './CV';
 import './About.css';
 
 
+import { Link, NavLink } from 'react-router-dom';
+import { AiOutlineHome } from 'react-icons/ai'; 
+import { BsInfoSquare } from 'react-icons/bs'; 
+import { IoIosGitNetwork} from 'react-icons/io'; 
+import { GiEarthAfricaEurope } from 'react-icons/gi'; 
+import { BsPencil } from 'react-icons/bs'; 
+
 function About() {
   return (
     <div className="About-wrapper">
+
+<div class="burger">
+<NavLink to="/MyVision/about" className="nav-item">
+         <BsInfoSquare className="Navbar__icon"/>
+</NavLink>
+<NavLink to="/MyVision/blog" className="nav-item">
+         <GiEarthAfricaEurope className="Navbar__icon"/>
+</NavLink>
+<NavLink to="/MyVision/contacts" className="nav-item">
+        <BsPencil className="Navbar__icon"/>
+</NavLink>
+</div>
+
         <div className="About">
 
              <div className="About-col1">

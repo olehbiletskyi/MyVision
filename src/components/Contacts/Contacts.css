@@ -7,7 +7,26 @@
     height: 100vh;
     width: 100%;
 }
+/* .burger{
+    z-index: 20;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    color: #4e4e4e;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32px;
+    text-transform: uppercase;
 
+}
+.nav-item{
+    z-index: 2;
+    margin-right: 10px;
+} */
 .map-marker{}
 .map-marker-popup{ } 
 .map-marker-popup-body{}

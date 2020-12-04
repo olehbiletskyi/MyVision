@@ -2,15 +2,41 @@
     background-color: #ffffff;
     width: 100%;
     padding: 10px;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-left: 20px;
     position: relative;
     margin: 28px;
 }
+.burger{
+    display: none;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    color: #4e4e4e;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32px;
+    text-transform: uppercase;
+
+}
+.nav-item{
+    display: none;
+    z-index: 2;
+    margin-right: 10px;
+}
+
+
+
 .About{
     display: flex;
     margin: 10px;
 }
+
 .About-col1{
     display: flex;
     flex-direction: column;
@@ -90,6 +116,12 @@
 
 
 @media screen and (max-width: 941px) {
+    .burger{
+        display: flex;
+    }
+    .nav-item{
+        display: block;
+    }
     .About-wrapper{
         background-color: #fdfdfd;
         width: 100%;

@@ -6,10 +6,29 @@ import './Blog.css';
 // import './Article/Article.js';
 
 
+import { Link, NavLink } from 'react-router-dom';
+import { AiOutlineHome } from 'react-icons/ai'; 
+import { BsInfoSquare } from 'react-icons/bs'; 
+import { IoIosGitNetwork} from 'react-icons/io'; 
+import { GiEarthAfricaEurope } from 'react-icons/gi'; 
+import { BsPencil } from 'react-icons/bs'; 
+
+
 function Blog( {  articles, getPosts, value, changeInput, isLoading, totalResults } ) {
 
     return (
         <div className="Blog-wrapper">
+<div class="burger">
+<NavLink to="/MyVision/about" className="nav-item">
+         <BsInfoSquare className="Navbar__icon-bc"/>
+</NavLink>
+<NavLink to="/MyVision/blog" className="nav-item">
+         <GiEarthAfricaEurope className="Navbar__icon"/>
+</NavLink>
+<NavLink to="/MyVision/contacts" className="nav-item">
+        <BsPencil className="Navbar__icon"/>
+</NavLink>
+</div>
 
             <form className="Blog-form" onSubmit={(e)=> (e.preventDefault()) } noValidate>
                 <h1 className="Blog-form__title">Search news for a topic</h1>
