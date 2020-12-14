@@ -1,6 +1,6 @@
 import React from 'react';
 import {FaDownload} from 'react-icons/fa';
-import './CV.css';
+import './index.css';
 
 function CV () {
     return(

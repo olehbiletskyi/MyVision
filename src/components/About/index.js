@@ -1,20 +1,13 @@
 import React from 'react';
-import {FaDownload, } from 'react-icons/fa'; 
-import portrait1 from '../../images/portrait601.JPG';
-import portrait2 from '../../images/portrait602.JPG';
-import portrait3 from '../../images/portrait603.JPG';
-import stamp from '../../images/stamp.png';
-import MyLinks from './MyLinks';
-import CV from './CV';
-import './About.css';
-
-
-import { Link, NavLink } from 'react-router-dom';
-import { AiOutlineHome } from 'react-icons/ai'; 
+import { NavLink } from 'react-router-dom';
 import { BsInfoSquare } from 'react-icons/bs'; 
-import { IoIosGitNetwork} from 'react-icons/io'; 
 import { GiEarthAfricaEurope } from 'react-icons/gi'; 
 import { BsPencil } from 'react-icons/bs'; 
+import portrait1 from '../../images/portrait601.JPG';
+import stamp from '../../images/stamp.png';
+import './index.css';
+import MyLinks from './MyLinks';
+import CV from './CV';
 
 function About() {
   return (
@@ -57,8 +50,6 @@ function About() {
 
 
         
-        
- 
     </div>
   );
 }
