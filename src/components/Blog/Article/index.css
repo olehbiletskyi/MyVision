@@ -1,98 +1,9 @@
-.Blog-wrapper{
-    background-color: #b4b7b8;
-    width: 100%;
-    /* height: 100vh; */
-}
-.Blog-form{
-    
-}
-.Blog-form__title{
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
-    font-size: 26px;
-    font-weight: 500;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 32px;
-    background-color: rgb(76, 83, 87);
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.02) 100%);
-    padding: 15px;
-    text-align: center;
-}
-.Blog-form__input-wrapper{ 
-    display: flex; 
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.Blog-form__icon{
-    position: absolute;
-    z-index: 3;
-    margin-left: 17px;
-    margin-top: 17px;
-    margin-right: 17px;
-    font-size: 25px;
-    font-family: 'Noto Sans', sans-serif;
-    color:rgba(73, 73, 73, 0.639);
-}
-.Blog-form__input{
-    position: relative;
-    width: 75%;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
-    color: rgb(73, 73, 73);
-    background-color: rgb(255, 255, 255);
-    padding-left: 50px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    
-    
-}
-.Blog__getPosts-btn{
-    width: 25%;
-    color: #ffffff;
-    background-color: #1ab5b3;
-    font-size: 20px;
-    font-family: 'Noto Sans', sans-serif;
-    text-transform: uppercase;
-    /* font-style: normal; */
-    font-weight: 600; 
-    letter-spacing: normal;
-    line-height: 30px; 
-    text-align: center;
-}
-.Blog__getPosts-btn:hover{
-    text-decoration: underline;
-}
-
-
-.Blog-result-quality{
-    text-align: center;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
-    color: rgb(73, 73, 73);
-    margin-top: 20px;
-}
-
-.Blog{
-    background-color: #b4b7b8;
-    width: 100%;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    display: flex;
-    flex-wrap: wrap;
-}
 .article{
     max-width: 294px;
     max-height: 370px;
     background-color: rgb(255, 255, 255);
     margin: 5px 5px 5px 5px;
 }
-
 .article__img-part{
     background-color: #d7d7d7;
     width: 294px;
@@ -116,7 +27,6 @@
     margin-bottom: 13px;
 }
 .article__description{
-    min-height: 90px;
     color: #9c9c9c;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
@@ -160,48 +70,6 @@
     letter-spacing: normal;
     line-height: 22px;
     margin-left: 10px;
-}
-.effects{
-    margin: auto;
-    text-align: center;
-    margin-top: 50px;
-}
-.curcle{
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    display: inline-block;
-    background-color: #767676;
-    margin: auto;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.curcle1{
-    height: 20px;
-    width: 20px;
-}
-.curcle2{
-    height: 30px;
-    width: 30px;
-}
-.curcle3{
-    height: 40px;
-    width: 40px;
-}
-.article-loader{
-    text-align: center;
-}
-
-
-.Blog-update-plan{
-    text-align: center;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 18px;
-    color: rgb(203, 76, 76);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #b4b7b8;
-    line-height: 30px;
 }
 
 
@@ -425,9 +293,6 @@
         margin-right:38px;
         margin-top: 40px;
     }
-    .Blog{
-        justify-content: center;
-    }
     .article{
         max-width: 394px;
         max-height: 470px;
@@ -441,20 +306,11 @@
         height: 241px;
     }
 }
-@media screen and (max-width: 582px){
-    .Blog__getPosts-btn{
-        font-size: 14px;
-    }
-
-}
 @media screen and (max-width: 500px){
     .article{
         margin-left: 55px;
         margin-right:38px;
         margin-top: 40px;
-    }
-    .Blog{
-        justify-content: center;
     }
     .article{
         max-width: 294px;
@@ -471,7 +327,3 @@
 }
 
 
-
-
-
-  

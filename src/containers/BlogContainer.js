@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getPostsFunc, changeInputAction } from '../actions/blog';
-import Blog from '../components/Blog/Blog';
+import Blog from '../components/Blog';
 
 const BlogContainer = ( { articles, getPosts, value, changeInput, isLoading, totalResults, } ) => (
     <Blog 

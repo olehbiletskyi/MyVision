@@ -1,6 +1,6 @@
 import React from 'react';
 import { GoCalendar } from 'react-icons/go';
-import './Article.css';
+import './index.css';
 
 function Article( { article__imageSrc, article__clickHref, article__title, article__description, article__sourceNameHref, article__sourceName, article__publishedAt  } ) {
     return (
@@ -14,8 +14,8 @@ function Article( { article__imageSrc, article__clickHref, article__title, artic
 
             <div className="article__text-part">
                 <a href={article__clickHref} className="article__click" target='blank'>
-                    <h1 className="article__title">{article__title}</h1>
-                    <div className="article__description">{article__description}</div>
+                    <h1 className="article__title">{article__title} ...</h1>
+                    <div className="article__description">{article__description}...</div>
                 </a>
 
                 <div className="article__row-line"></div>
