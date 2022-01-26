@@ -14,12 +14,12 @@ function App() {
         <Sidebar />
         <Switch>
             <Route  exact path="/" component={About} />
-            <Route  exact path="/MyVision" component={About} />
+            <Route  exact path="/MyFirstPersonalWebsite" component={About} />
             {/* <Route path="/homepage" component={Home} /> */}
-            <Route path="/MyVision/about" component={About} />
+            <Route path="/MyFirstPersonalWebsite/about" component={About} />
             {/* <Route path="/MyVision/work" component={Work} /> */}
-            <Route path="/MyVision/blog" component={BlogContainer} />
-            <Route path="/MyVision/contacts" component={ContactsContainer} />
+            <Route path="/MyFirstPersonalWebsite/blog" component={BlogContainer} />
+            <Route path="/MyFirstPersonalWebsite/contacts" component={ContactsContainer} />
         </Switch>
     </div>
   );
